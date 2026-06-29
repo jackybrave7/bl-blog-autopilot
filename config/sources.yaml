@@ -1,0 +1,45 @@
+# RSS-источники. Ротация по дням недели (0=пн … 6=вс).
+# category_ids — ID категорий WordPress (см. config/categories.yaml)
+
+sources:
+  - id: its-nice-that
+    name: It's Nice That
+    url: https://www.itsnicethat.com/rss
+    topics: [illustration, commercial]
+    category_ids: [26, 9]
+    weekdays: [2, 4]
+
+  - id: creative-boom
+    name: Creative Boom
+    url: https://www.creativeboom.com/feed/
+    topics: [illustration, commercial, painting]
+    category_ids: [26, 9]
+    weekdays: [0, 1, 3]
+
+  - id: colossal
+    name: Colossal
+    url: https://www.thisiscolossal.com/feed/
+    topics: [painting, exhibitions, artists]
+    category_ids: [119, 9]
+    weekdays: [2, 3, 5]
+
+  - id: hyperallergic
+    name: Hyperallergic
+    url: https://hyperallergic.com/feed/
+    topics: [exhibitions, art-news, grants]
+    category_ids: [119, 9]
+    weekdays: [0, 1, 4, 6]
+
+  - id: illustration-age
+    name: Illustration Age
+    url: https://illustrationage.com/feed/
+    topics: [book-illustration, illustration]
+    category_ids: [97, 26]
+    weekdays: [2, 5]
+
+  - id: juxtapoz
+    name: Juxtapoz
+    url: https://www.juxtapoz.com/feed/
+    topics: [painting, artists]
+    category_ids: [9, 119]
+    weekdays: [5, 6]

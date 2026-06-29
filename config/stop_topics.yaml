@@ -1,0 +1,98 @@
+# Стоп-темы: статьи с совпадениями не публикуются.
+# keywords — подстроки в заголовке/тексте (регистр не важен).
+# Списки можно дополнять вручную.
+
+topics:
+  lgbt:
+    label: ЛГБТ
+    keywords:
+      - lgbt
+      - lgbtq
+      - queer
+      - gay
+      - lesbian
+      - homosexual
+      - transgender
+      - trans pride
+      - pride month
+      - same-sex
+      - квир
+      - гей
+      - лесби
+      - трансгендер
+      - прайд
+      - однопол
+      - лгбт
+      - сексуальн меньшинств
+
+  politics:
+    label: политика
+    keywords:
+      - election
+      - presidential
+      - parliament
+      - congress
+      - geopolitic
+      - sanctions
+      - politician
+      - government crackdown
+      - protest march
+      - выборы
+      - президент
+      - парламент
+      - санкции
+      - политик
+      - оппозици
+      - депутат
+      - госдума
+      - кремл
+
+  war:
+    label: войны
+    keywords:
+      - ukraine war
+      - russia invasion
+      - military offensive
+      - airstrike
+      - battlefield
+      - armed conflict
+      - война в
+      - военн конфликт
+      - спецопераци
+      - фронт
+      - ракетн удар
+      - обстрел
+      - мобилизаци
+
+  ethnic_hatred:
+    label: межнациональная неприязнь
+    keywords:
+      - xenophob
+      - racist
+      - racism
+      - white supremac
+      - antisemit
+      - islamophob
+      - hate crime
+      - ethnic cleansing
+      - ксенофоб
+      - расизм
+      - антисемит
+      - межнациональн
+      - этническ чистк
+      - ненависть к
+
+  pornography:
+    label: порнография
+    keywords:
+      - pornograph
+      - porn site
+      - xxx
+      - nsfw
+      - explicit sex
+      - erotic film
+      - порно
+      - порнограф
+      - эротическ фильм
+      - интимн контент
+      - обнажённ акт
