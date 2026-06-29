@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import os
+import re
 
 
 def build_cta_html() -> str:
@@ -18,3 +19,26 @@ def build_cta_html() -> str:
   <a href="https://www.bl-school.com/" style="display:inline-block;background:#d9a441;color:#1c1016;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:700;font-size:16px;">Выбрать курс →</a>
 </div>
 """.strip()
+
+
+def has_cta_banner(content: str) -> bool:
+    return "bl-cta-banner" in content
+
+
+_SOURCE_BEFORE = re.compile(
+    r"<hr[^>]*>\s*<p[^>]*>.*?Источник",
+    re.IGNORECASE | re.DOTALL,
+)
+
+
+def inject_cta_html(content: str, cta: str | None = None) -> str:
+    """Insert CTA before source footer or at end of post. Idempotent."""
+    if has_cta_banner(content):
+        return content
+    block = (cta or build_cta_html()).strip()
+    match = _SOURCE_BEFORE.search(content)
+    if match:
+        before = content[: match.start()].rstrip()
+        after = content[match.start() :].lstrip()
+        return f"{before}\n\n{block}\n\n{after}"
+    return f"{content.rstrip()}\n\n{block}\n"

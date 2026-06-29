@@ -81,7 +81,7 @@ def categorize_with_deepseek(title: str, text: str) -> tuple[list[int], list[str
         f"Доступные темы:\n{format_categories_for_prompt()}"
     )
     user = f"Заголовок: {title}\n\nТекст:\n{text[:4000]}"
-    result = call_deepseek(system, user)
+    result = call_deepseek(system, user, model=deepseek_config()["categorize_model"], temperature=0.3)
     keys = result.get("category_keys") or []
     if isinstance(keys, str):
         keys = [keys]

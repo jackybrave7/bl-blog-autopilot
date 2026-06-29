@@ -8,6 +8,8 @@
 
 ## Шаг 1 — Загрузка статьи
 
+Перед выбором статьи `fetch` автоматически синхронизирует `data/published.json` с WordPress (по ссылкам «Источник» в постах) — чтобы не брать уже опубликованные материалы.
+
 ```bash
 pip install -r requirements.txt
 python run.py fetch
@@ -31,7 +33,7 @@ DeepSeek выбирает 1–2 темы из `config/categories.yaml` по см
 python run.py categorize --article data/pending/<run_id>/article.json
 ```
 
-Промпт настраивается в `config/translate_prompt.yaml`. Модель: `deepseek-v4-flash` (ключ в `.env`).
+Промпт настраивается в `config/translate_prompt.yaml`. Перевод: `deepseek-v4-pro`, категории: `deepseek-v4-flash` (ключ в `.env`).
 
 Если статья попала под стоп-тему — команда завершится с ошибкой; возьми другую статью (`fetch`).
 
@@ -55,7 +57,7 @@ python run.py publish --article ... --title "<title_ru>" --body-file ... --excer
 
 ## Правила
 
-- Не публикуй, если статья уже есть в `data/published.json`
+- Не публикуй, если статья уже есть в `data/published.json` (после `fetch` журнал синхронизирован с WP)
 - **Стоп-темы** (`config/stop_topics.yaml`): ЛГБТ, политика, войны, межнациональная неприязнь, порнография — такие материалы пропускай; если `fetch` их отфильтровал, бери следующую статью
 - В конце поста автоматически добавится блок «Источник» и CTA
 - Excerpt + тег `<!--more-->` вставляются автоматически: на `/blog/` виден только лид, полный текст — по клику

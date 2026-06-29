@@ -14,7 +14,7 @@ from bs4 import BeautifulSoup
 
 from src.cta import build_cta_html
 from src.content_filter import ensure_allowed
-from src.lib import mark_published, wp_config
+from src.lib import mark_published, wp_config, is_published
 
 SESSION = requests.Session()
 MORE_TAG = "<!--more-->"
@@ -282,6 +282,13 @@ def publish(
         )
     payload, uploaded = prepare_post_payload(data, title_ru, body_ru, excerpt_ru, wp)
     has_read_more = payload.pop("_has_read_more", False)
+
+    source_url = data.get("source", {}).get("url", "")
+    if source_url and is_published(source_url):
+        raise RuntimeError(
+            f"Статья уже опубликована (source_url в published.json): {source_url}. "
+            "Используйте --update <post_id> или удалите дубликат."
+        )
 
     resp = SESSION.post(
         f"{wp['url']}/wp-json/wp/v2/posts",

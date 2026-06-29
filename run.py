@@ -72,6 +72,31 @@ def cmd_categorize(article: Path) -> None:
     print(json.dumps({"ok": True, **result}, ensure_ascii=False))
 
 
+def cmd_backfill_cta(status: str, dry_run: bool, limit: int | None) -> None:
+    from src.backfill_cta import backfill_cta
+
+    if status == "any":
+        r1 = backfill_cta(status="publish", dry_run=dry_run, limit=limit)
+        r2 = backfill_cta(status="draft", dry_run=dry_run, limit=limit)
+        result = {
+            "ok": True,
+            "dry_run": dry_run,
+            "updated": r1["updated"] + r2["updated"],
+            "skipped": r1["skipped"] + r2["skipped"],
+            "posts_updated": r1["posts_updated"] + r2["posts_updated"],
+        }
+    else:
+        result = {"ok": True, **backfill_cta(status=status, dry_run=dry_run, limit=limit)}
+    print(json.dumps(result, ensure_ascii=False))
+
+
+def cmd_sync_published(dry_run: bool) -> None:
+    from src.sync_published import sync_published_from_wp
+
+    result = sync_published_from_wp(dry_run=dry_run)
+    print(json.dumps({"ok": True, **result}, ensure_ascii=False, indent=2))
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Bratec Lis School blog autopilot")
     sub = parser.add_subparsers(dest="command", required=True)
@@ -104,6 +129,14 @@ def main() -> None:
     cat_p = sub.add_parser("categorize", help="Assign WP categories via DeepSeek")
     cat_p.add_argument("--article", required=True, type=Path)
 
+    cta_p = sub.add_parser("backfill-cta", help="Add CTA banner to existing WP posts")
+    cta_p.add_argument("--status", default="publish", help="publish | draft | any")
+    cta_p.add_argument("--dry-run", action="store_true")
+    cta_p.add_argument("--limit", type=int)
+
+    sync_p = sub.add_parser("sync-published", help="Sync published.json from WordPress source links")
+    sync_p.add_argument("--dry-run", action="store_true")
+
     args = parser.parse_args()
     if args.command == "fetch":
         cmd_fetch(args.weekday, args.out)
@@ -115,6 +148,10 @@ def main() -> None:
         cmd_translate(args.article, args.force)
     elif args.command == "categorize":
         cmd_categorize(args.article)
+    elif args.command == "backfill-cta":
+        cmd_backfill_cta(args.status, args.dry_run, args.limit)
+    elif args.command == "sync-published":
+        cmd_sync_published(args.dry_run)
 
 
 if __name__ == "__main__":

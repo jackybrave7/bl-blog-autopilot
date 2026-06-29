@@ -1,7 +1,4 @@
-from src.translate import call_deepseek
+from src.translate import call_deepseek, deepseek_config
 
-result = call_deepseek(
-    'Return JSON: {"status": "ok"}',
-    "ping",
-)
-print(result)
+print("translate_model:", deepseek_config()["translate_model"])
+print(call_deepseek('Return JSON: {"status": "ok"}', "ping"))

@@ -1,5 +1,6 @@
 # RSS-источники. Ротация по дням недели (0=пн … 6=вс).
-# category_ids — ID категорий WordPress (см. config/categories.yaml)
+# region: it | fr | jp | kr | asia | intl (для справки)
+# category_ids — fallback; умные категории задаёт DeepSeek (config/categories.yaml)
 
 sources:
   - id: its-nice-that
@@ -43,3 +44,185 @@ sources:
     topics: [painting, artists]
     category_ids: [9, 119]
     weekdays: [5, 6]
+
+  # --- Италия ---
+  - id: didatticarte
+    name: Didatticarte
+    region: it
+    url: https://www.didatticarte.it/Blog/?feed=rss2
+    topics: [art-history, education, techniques]
+    category_ids: [119, 136]
+    weekdays: [0, 3]
+
+  - id: robadadisegnatori
+    name: Roba da Disegnatori
+    region: it
+    url: https://robadadisegnatori.com/feed/
+    topics: [illustration, book-illustration, techniques]
+    category_ids: [26, 97]
+    weekdays: [1, 4]
+
+  - id: artribune
+    name: Artribune
+    region: it
+    url: https://www.artribune.com/feed-rss/
+    topics: [exhibitions, art-news, art-history]
+    category_ids: [119, 9]
+    weekdays: [2, 6]
+
+  # --- Франция ---
+  - id: connaissancedesarts
+    name: Connaissance des Arts
+    region: fr
+    url: https://www.connaissancedesarts.com/feed/
+    topics: [art-history, exhibitions, museums]
+    category_ids: [119, 9]
+    weekdays: [0, 2]
+
+  - id: paris-art
+    name: Paris Art
+    region: fr
+    url: https://www.paris-art.com/feed/
+    topics: [exhibitions, artists, art-news]
+    category_ids: [119, 9]
+    weekdays: [3, 5]
+
+  # --- Япония ---
+  - id: spoon-tamago
+    name: Spoon & Tamago
+    region: jp
+    url: https://www.spoon-tamago.com/feed/
+    topics: [design, illustration, contemporary-art]
+    category_ids: [26, 112]
+    weekdays: [1, 3]
+
+  - id: design-made-in-japan
+    name: Design Made in Japan
+    region: jp
+    url: https://designmadeinjapan.com/feed/
+    topics: [design, illustration, graphics]
+    category_ids: [112, 26]
+    weekdays: [0, 4]
+
+  - id: japan-forward-culture
+    name: Japan Forward (Culture)
+    region: jp
+    url: https://japan-forward.com/category/culture/feed/
+    topics: [art, culture, exhibitions]
+    category_ids: [119, 9]
+    weekdays: [2, 5]
+
+  - id: japan-times
+    name: The Japan Times
+    region: jp
+    url: https://www.japantimes.co.jp/feed/
+    topics: [culture, art, design]
+    category_ids: [119, 9]
+    weekdays: [6]
+
+  # --- Южная Корея ---
+  - id: design-by-korea
+    name: Design By Korea
+    region: kr
+    url: https://designbyk.wordpress.com/feed/
+    topics: [design, illustration, artists]
+    category_ids: [26, 9]
+    weekdays: [0, 5]
+
+  - id: artist-jungsoon
+    name: Artist Jungsoon (KR)
+    region: kr
+    url: http://artistjs.blogspot.com/feeds/posts/default
+    topics: [illustration, book-illustration]
+    category_ids: [97, 26]
+    weekdays: [4, 6]
+
+  # --- Азия (широкий регион) ---
+  - id: art-asia-pacific
+    name: ArtAsiaPacific
+    region: asia
+    url: https://www.artasiapacific.com/rss
+    topics: [contemporary-art, exhibitions, asia]
+    category_ids: [119, 9]
+    weekdays: [1, 6]
+
+  # --- Международные (иллюстрация, дизайн, арт-новости) ---
+  - id: cartoon-brew
+    name: Cartoon Brew
+    region: intl
+    url: https://www.cartoonbrew.com/feed
+    topics: [animation, illustration]
+    category_ids: [26, 9]
+    weekdays: [0, 2]
+
+  - id: print-magazine
+    name: PRINT Magazine
+    region: intl
+    url: https://www.printmag.com/feed/
+    topics: [design, illustration, graphics]
+    category_ids: [26, 112]
+    weekdays: [3, 4]
+
+  - id: creative-review
+    name: Creative Review
+    region: intl
+    url: https://www.creativereview.co.uk/feed/
+    topics: [design, illustration, commercial]
+    category_ids: [26, 112]
+    weekdays: [1, 5]
+
+  - id: booooooom
+    name: Booooooom
+    region: intl
+    url: https://www.booooooom.com/feed/
+    topics: [contemporary-art, photography, artists]
+    category_ids: [9, 26]
+    weekdays: [2, 4]
+
+  - id: artnet-news
+    name: Artnet News
+    region: intl
+    url: https://news.artnet.com/feed
+    topics: [art-news, market, exhibitions]
+    category_ids: [119, 9]
+    weekdays: [0, 6]
+
+  - id: artnews
+    name: ARTnews
+    region: intl
+    url: https://www.artnews.com/feed/
+    topics: [art-news, exhibitions, artists]
+    category_ids: [119, 9]
+    weekdays: [3, 6]
+
+  - id: artlyst
+    name: Artlyst
+    region: intl
+    url: https://www.artlyst.com/feed/
+    topics: [contemporary-art, exhibitions]
+    category_ids: [119, 9]
+    weekdays: [4, 5]
+
+  - id: contemporary-art-daily
+    name: Contemporary Art Daily
+    region: intl
+    url: https://www.contemporaryartdaily.com/feed
+    topics: [exhibitions, contemporary-art]
+    category_ids: [119, 9]
+    weekdays: [5, 0]
+
+  - id: scene360
+    name: Scene360
+    region: intl
+    url: https://www.scene360.com/feed/
+    topics: [illustration, digital-art, design]
+    category_ids: [26, 112]
+    weekdays: [1, 2]
+
+  - id: grafik-magazine
+    name: Grafik
+    region: intl
+    url: https://www.grafik.net/feed/
+    topics: [graphics, design, illustration]
+    category_ids: [26, 112]
+    weekdays: [4, 0]

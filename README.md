@@ -23,7 +23,7 @@ python run.py fetch
 python run.py translate --article data/pending/YYYYMMDD_HHMMSS/article.json
 ```
 
-Ключ API — в `.env` (`DEEPSEEK_API_KEY`). Модель по умолчанию: `deepseek-v4-flash`.
+Ключ API — в `.env` (`DEEPSEEK_API_KEY`). Перевод: **`deepseek-v4-pro`** (живой стиль); категории: `deepseek-v4-flash`.
 
 ### Публикация
 
@@ -48,14 +48,22 @@ python run.py publish ^
 
 Настраиваются в `config/sources.yaml` — RSS-ленты с ротацией по дням недели:
 
-| Источник | Темы |
-|----------|------|
-| It's Nice That | иллюстрация, коммерция |
-| Creative Boom | иллюстрация, живопись |
-| Colossal | выставки, художники |
-| Hyperallergic | новости искусства, гранты |
-| Illustration Age | книжная иллюстрация |
-| Juxtapoz | живопись, street art |
+| Источник | Регион | Темы |
+|----------|--------|------|
+| It's Nice That | intl | иллюстрация, коммерция |
+| Creative Boom | intl | иллюстрация, живопись |
+| Colossal | intl | выставки, художники |
+| Hyperallergic | intl | новости искусства |
+| Illustration Age | intl | книжная иллюстрация |
+| Juxtapoz | intl | живопись, street art |
+| Didatticarte, Roba da Disegnatori, Artribune | 🇮🇹 | история искусства, иллюстрация |
+| Connaissance des Arts, Paris Art | 🇫🇷 | музеи, выставки |
+| Spoon & Tamago, Design Made in Japan, Japan Forward | 🇯🇵 | дизайн, культура |
+| Design By Korea, Artist Jungsoon | 🇰🇷 | корейский дизайн, иллюстрация |
+| ArtAsiaPacific | asia | современное искусство Азии |
+| Cartoon Brew, PRINT, Booooooom, Artnet… | intl | иллюстрация, арт-новости |
+
+Полный список — в `config/sources.yaml` (26 источников). Регион `region` — справочно; ротация по `weekdays`.
 
 ## Cursor Automation
 
@@ -69,7 +77,8 @@ python run.py publish ^
 - `WP_APP_PASSWORD`
 - `WP_POST_STATUS` (`draft` на старте)
 - `DEEPSEEK_API_KEY`
-- `DEEPSEEK_MODEL` (опционально, по умолчанию `deepseek-v4-flash`)
+- `DEEPSEEK_TRANSLATE_MODEL` (по умолчанию `deepseek-v4-pro`)
+- `DEEPSEEK_CATEGORIZE_MODEL` (по умолчанию `deepseek-v4-flash`)
 
 ## Стоп-темы
 

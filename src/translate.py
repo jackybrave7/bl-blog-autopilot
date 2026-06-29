@@ -23,6 +23,8 @@ from src.lib import ROOT, load_env
 SESSION = requests.Session()
 DEEPSEEK_URL = "https://api.deepseek.com/chat/completions"
 DEFAULT_MODEL = "deepseek-v4-flash"
+DEFAULT_TRANSLATE_MODEL = "deepseek-v4-pro"
+DEFAULT_CATEGORIZE_MODEL = "deepseek-v4-flash"
 
 
 def deepseek_config() -> dict:
@@ -32,10 +34,20 @@ def deepseek_config() -> dict:
     key = os.environ.get("DEEPSEEK_API_KEY", "").strip()
     if not key:
         raise RuntimeError("DEEPSEEK_API_KEY не задан в .env")
+    translate_model = (
+        os.environ.get("DEEPSEEK_TRANSLATE_MODEL", "").strip()
+        or DEFAULT_TRANSLATE_MODEL
+    )
+    categorize_model = (
+        os.environ.get("DEEPSEEK_CATEGORIZE_MODEL", "").strip()
+        or os.environ.get("DEEPSEEK_MODEL", "").strip()
+        or DEFAULT_CATEGORIZE_MODEL
+    )
     return {
         "api_key": key,
-        "model": os.environ.get("DEEPSEEK_MODEL", DEFAULT_MODEL).strip() or DEFAULT_MODEL,
-        "timeout": int(os.environ.get("DEEPSEEK_TIMEOUT", "120")),
+        "translate_model": translate_model,
+        "categorize_model": categorize_model,
+        "timeout": int(os.environ.get("DEEPSEEK_TIMEOUT", "180")),
     }
 
 
@@ -79,7 +91,13 @@ def extract_json(text: str) -> dict:
     return json.loads(text)
 
 
-def call_deepseek(system: str, user: str) -> dict:
+def call_deepseek(
+    system: str,
+    user: str,
+    *,
+    model: str | None = None,
+    temperature: float = 0.65,
+) -> dict:
     cfg = deepseek_config()
     resp = SESSION.post(
         DEEPSEEK_URL,
@@ -88,13 +106,13 @@ def call_deepseek(system: str, user: str) -> dict:
             "Content-Type": "application/json",
         },
         json={
-            "model": cfg["model"],
+            "model": model or cfg["translate_model"],
             "messages": [
                 {"role": "system", "content": system},
                 {"role": "user", "content": user},
             ],
             "response_format": {"type": "json_object"},
-            "temperature": 0.6,
+            "temperature": temperature,
         },
         timeout=cfg["timeout"],
     )
@@ -198,7 +216,7 @@ def translate_article(article_path: Path, skip_filter: bool = False) -> dict:
         "category_ids": article.get("category_ids", []),
         "category_names": category_names_for_ids(article.get("category_ids", [])),
         "category_keys": article.get("category_keys", []),
-        "model": deepseek_config()["model"],
+        "model": deepseek_config()["translate_model"],
         **paths,
     }
 
@@ -238,7 +256,7 @@ def categorize_article(article_path: Path) -> dict:
         "category_ids": category_ids,
         "category_names": category_names_for_ids(category_ids),
         "category_keys": category_keys,
-        "model": deepseek_config()["model"],
+        "model": deepseek_config()["categorize_model"],
     }
 
 
