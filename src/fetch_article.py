@@ -106,43 +106,174 @@ def html_to_plain(html: str) -> str:
 
 
 def fullsize_image_url(url: str) -> str:
-    return re.sub(r"/size/w\d+/", "/", url)
+    url = re.sub(r"/size/w\d+/", "/", url)
+    # WordPress.com / Illustration Age: ?w=700 → full path
+    if "?w=" in url or "&w=" in url:
+        url = url.split("?")[0].split("&")[0]
+    # WordPress thumbnails: image-300x200.jpg → image.jpg
+    url = re.sub(r"-\d+x\d+(\.(?:jpe?g|png|gif|webp))", r"\1", url, flags=re.IGNORECASE)
+    return url
+
+
+def _is_junk_image(url: str, img_tag) -> bool:
+    lower = url.lower()
+    if any(x in lower for x in (
+        "gravatar", "pixel", "tracking", "avatar", "logo", "emoji",
+        "spinner", "badge", "wp-smiley", "icon.svg", "doubleclick",
+    )):
+        return True
+    try:
+        w = int(img_tag.get("width") or 0)
+        h = int(img_tag.get("height") or 0)
+        if w and h and w < 64 and h < 64:
+            return True
+    except (TypeError, ValueError):
+        pass
+    return False
+
+
+def _img_src(img) -> str | None:
+    for attr in ("src", "data-src", "data-lazy-src", "data-original"):
+        val = img.get(attr)
+        if val and not val.startswith("data:"):
+            return val
+    return None
+
+
+def _dedupe_image_meta(images: list[dict]) -> list[dict]:
+    seen: set[str] = set()
+    unique: list[dict] = []
+    for meta in images:
+        key = fullsize_image_url(meta["source_url"])
+        if key in seen:
+            continue
+        seen.add(key)
+        unique.append({**meta, "source_url": key})
+    return unique
+
+
+def _extract_ghost_figures(soup: BeautifulSoup) -> list[dict]:
+    images: list[dict] = []
+    for fig in soup.select(".gh-content figure.kg-image-card"):
+        img = fig.find("img")
+        if not img:
+            continue
+        src = _img_src(img)
+        if not src or _is_junk_image(src, img):
+            continue
+        cap_el = fig.find("figcaption")
+        images.append({
+            "role": "inline",
+            "source_url": fullsize_image_url(urljoin("", src)),
+            "caption": cap_el.get_text(" ", strip=True) if cap_el else "",
+        })
+    return images
+
+
+def _extract_wordpress_figures(soup: BeautifulSoup, base_url: str) -> list[dict]:
+    root = (
+        soup.select_one(".entry")
+        or soup.select_one(".hentry")
+        or soup.select_one("article .post-content")
+        or soup.select_one("article")
+        or soup.select_one("main")
+    )
+    if not root:
+        return []
+
+    images: list[dict] = []
+    seen_in_figure: set[str] = set()
+
+    for fig in root.find_all("figure"):
+        img = fig.find("img")
+        if not img:
+            continue
+        src = _img_src(img)
+        if not src or _is_junk_image(src, img):
+            continue
+        full = fullsize_image_url(urljoin(base_url, src))
+        seen_in_figure.add(full)
+        cap_el = fig.find("figcaption")
+        images.append({
+            "role": "inline",
+            "source_url": full,
+            "caption": cap_el.get_text(" ", strip=True) if cap_el else "",
+        })
+
+    for img in root.find_all("img"):
+        src = _img_src(img)
+        if not src or _is_junk_image(src, img):
+            continue
+        full = fullsize_image_url(urljoin(base_url, src))
+        if full in seen_in_figure:
+            continue
+        images.append({
+            "role": "inline",
+            "source_url": full,
+            "caption": img.get("alt", "").strip(),
+        })
+
+    return images
 
 
 def extract_images_structured(page_url: str) -> list[dict]:
-    """Hero (og:image) + inline figures with captions, in article order."""
+    """Hero (og:image) + inline figures from Ghost, WordPress, or generic article."""
     resp = SESSION.get(page_url, timeout=ARTICLE_TIMEOUT)
     resp.raise_for_status()
     soup = BeautifulSoup(resp.text, "lxml")
-    images: list[dict] = []
+    base_url = f"{urlparse(page_url).scheme}://{urlparse(page_url).netloc}"
 
-    og = soup.find("meta", property="og:image")
-    header_cap = soup.select_one(
+    header_cap = ""
+    header_cap_el = soup.select_one(
         ".gh-article-header figure figcaption, .gh-article-image figcaption"
     )
-    hero_caption = header_cap.get_text(" ", strip=True) if header_cap else ""
-    if og and og.get("content"):
-        images.append(
-            {
-                "role": "hero",
-                "source_url": fullsize_image_url(og["content"]),
-                "caption": hero_caption,
-            }
+    if header_cap_el:
+        header_cap = header_cap_el.get_text(" ", strip=True)
+
+    content_images = _extract_ghost_figures(soup)
+    if len(content_images) < 2:
+        content_images = _dedupe_image_meta(
+            content_images + _extract_wordpress_figures(soup, base_url)
         )
 
-    for fig in soup.select(".gh-content figure.kg-image-card"):
-        img = fig.find("img")
-        if not img or not img.get("src"):
-            continue
-        cap_el = fig.find("figcaption")
-        images.append(
-            {
-                "role": "inline",
-                "source_url": img["src"],
-                "caption": cap_el.get_text(" ", strip=True) if cap_el else "",
-            }
+    if len(content_images) < 2:
+        doc = Document(resp.text)
+        content_images = _dedupe_image_meta(
+            content_images
+            + [
+                {
+                    "role": "inline",
+                    "source_url": fullsize_image_url(urljoin(base_url, u)),
+                    "caption": "",
+                }
+                for u in extract_images(doc.summary(html_partial=True), base_url)
+            ]
         )
-    return images
+
+    content_images = _dedupe_image_meta(content_images)[:23]
+
+    og = soup.find("meta", property="og:image")
+    og_url = fullsize_image_url(og["content"]) if og and og.get("content") else None
+
+    images: list[dict] = []
+    if og_url:
+        images.append({
+            "role": "hero",
+            "source_url": og_url,
+            "caption": header_cap,
+        })
+        content_images = [
+            c for c in content_images
+            if fullsize_image_url(c["source_url"]) != og_url
+        ]
+    elif content_images:
+        first = content_images.pop(0)
+        images.append({**first, "role": "hero", "caption": first.get("caption", "")})
+
+    for item in content_images:
+        images.append({**item, "role": "inline"})
+
+    return images[:24]
 
 
 def download_images_structured(image_meta: list[dict], dest: Path) -> list[dict]:
@@ -180,7 +311,7 @@ def extract_images(html: str, base_url: str) -> list[str]:
             continue
         seen.add(full)
         urls.append(full)
-    return urls[:8]
+    return urls[:24]
 
 
 def resolve_digest_url(url: str) -> str:

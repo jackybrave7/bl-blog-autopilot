@@ -181,14 +181,49 @@ def inline_figure(media_url: str, caption: str = "") -> str:
     )
 
 
+def distribute_figures(body: str, figures: list[str]) -> str:
+    """Insert figures into body when <!--IMG:n--> markers were omitted."""
+    if not figures:
+        return body
+
+    chunks = re.split(r"(</h2>)", body, flags=re.IGNORECASE)
+    if len(chunks) < 3:
+        chunks = re.split(r"(</p>)", body, flags=re.IGNORECASE)
+
+    result: list[str] = []
+    fig_idx = 0
+    step = max(1, len(chunks) // (len(figures) + 1))
+    for i, chunk in enumerate(chunks):
+        result.append(chunk)
+        if fig_idx < len(figures) and i > 0 and (i + 1) % step == 0:
+            result.append(f"\n\n{figures[fig_idx]}\n\n")
+            fig_idx += 1
+
+    while fig_idx < len(figures):
+        result.append(f"\n\n{figures[fig_idx]}\n\n")
+        fig_idx += 1
+
+    return "".join(result)
+
+
 def embed_inline_images(body: str, hero: dict | None, inline_images: list[dict]) -> str:
     html = body
     if hero:
         fig = inline_figure(hero["media_url"], pick_caption(hero))
         html = html.replace("<!--HERO-->", fig)
+
+    unplaced: list[str] = []
     for i, img in enumerate(inline_images):
+        marker = f"<!--IMG:{i}-->"
         fig = inline_figure(img["media_url"], pick_caption(img))
-        html = html.replace(f"<!--IMG:{i}-->", fig)
+        if marker in html:
+            html = html.replace(marker, fig)
+        else:
+            unplaced.append(fig)
+
+    if unplaced:
+        html = distribute_figures(html, unplaced)
+
     return html
 
 
