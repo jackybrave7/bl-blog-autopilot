@@ -40,7 +40,10 @@ ARTICLE_TIMEOUT = (5, 20)
 
 
 def log(msg: str) -> None:
-    print(msg, flush=True)
+    try:
+        print(msg, flush=True)
+    except UnicodeEncodeError:
+        print(msg.encode("ascii", errors="replace").decode("ascii"), flush=True)
 
 
 def sort_sources(sources: list[dict]) -> list[dict]:
