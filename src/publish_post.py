@@ -14,6 +14,7 @@ from bs4 import BeautifulSoup
 
 from src.cta import build_cta_html
 from src.content_filter import ensure_allowed
+from src.content_focus import ensure_focus_allowed
 from src.lib import mark_published, wp_config, is_published
 
 SESSION = requests.Session()
@@ -280,6 +281,12 @@ def publish(
             data.get("title_en", ""),
             data.get("content_html_en", ""),
         )
+        ensure_focus_allowed(
+            data.get("title_en", ""),
+            data.get("content_html_en", ""),
+            title_ru,
+            body_ru,
+        )
     payload, uploaded = prepare_post_payload(data, title_ru, body_ru, excerpt_ru, wp)
     has_read_more = payload.pop("_has_read_more", False)
 
@@ -329,6 +336,12 @@ def update_post(
             excerpt_ru,
             data.get("title_en", ""),
             data.get("content_html_en", ""),
+        )
+        ensure_focus_allowed(
+            data.get("title_en", ""),
+            data.get("content_html_en", ""),
+            title_ru,
+            body_ru,
         )
     uploaded = data.get("uploaded_media") if reuse_uploaded else None
     if not uploaded:

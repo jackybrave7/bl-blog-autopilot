@@ -1,0 +1,177 @@
+# Фокус контента: практика художника (иллюстрация, живопись, техники, материалы).
+# skip — жёсткий отсев; require_preferred — без ключевых слов практики статья не берётся.
+
+# Источники целиком отключены (маркетинг / дизайн-тренды)
+blocked_source_ids:
+  - creative-boom
+  - creative-review
+  - design-made-in-japan
+  - spoon-tamago
+  - design-by-korea
+  - artnet-news
+  - artlyst
+
+# URL-паттерны (подстрока в ссылке, регистр не важен)
+blocked_url_patterns:
+  - creativeboom.com/insight/
+  - creativereview.co.uk/opinion/
+  - /advertising/
+  - /marketing/
+  - cannes-lions
+  - cannes_lions
+  - adweek.com
+  - campaignlive
+
+skip_keywords:
+  - cannes lions
+  - cannes lion
+  - lions festival
+  - advertising festival
+  - ad festival
+  - marketing trend
+  - brand activation
+  - influencer marketing
+  - social media strategy
+  - adweek
+  - ad agency
+  - media agency
+  - creative industry
+  - creative sector
+  - resonance marketing
+  - niche communities and analogue
+  - analogue renaissance
+  - analog renaissance
+  - generative ai for marketers
+  - chatgpt for business
+  - ai will replace
+  - ai replacing
+  - stock price
+  - quarterly earnings
+  - venture capital
+  - startup funding
+  - culture war
+  - diversity initiative
+  - dei program
+  - key trends and takeaways
+  - takeaways from
+  - future of creativity
+  - future of advertising
+  - brand strategy
+  - rebranding
+  - ad campaign
+  - commercial campaign
+
+deprioritize_keywords:
+  - artificial intelligence
+  - generative ai
+  - gen ai
+  - chatgpt
+  - midjourney
+  - stable diffusion
+  - openai
+  - machine learning
+  - design trend
+  - branding
+  - award show
+  - festival lineup
+  - keynote speaker
+  - tech conference
+  - social media
+  - instagram
+  - tiktok
+  - nft
+  - crypto art
+  - art market
+  - auction record
+  - million dollar
+
+preferred_keywords:
+  - illustration
+  - illustrator
+  - illustrate
+  - painting
+  - painter
+  - paint
+  - watercolor
+  - watercolour
+  - gouache
+  - acrylic
+  - oil paint
+  - pastel
+  - sketch
+  - sketching
+  - sketchbook
+  - drawing
+  - draw
+  - figure drawing
+  - anatomy
+  - technique
+  - tutorial
+  - how to
+  - step-by-step
+  - step by step
+  - masterclass
+  - workshop
+  - demo
+  - process
+  - materials
+  - brushes
+  - brush
+  - pigments
+  - pigment
+  - paper
+  - canvas
+  - supplies
+  - art supplies
+  - procreate
+  - photoshop
+  - clip studio
+  - krita
+  - plein air
+  - color theory
+  - colour theory
+  - composition
+  - underpainting
+  - glazing
+  - glaze
+  - layering
+  - mixed media
+  - ink
+  - pen and ink
+  - linocut
+  - printmaking
+  - etching
+  - charcoal
+  - graphite
+  - studio practice
+  - life drawing
+  - portrait
+  - landscape
+  - still life
+  - children's book
+  - picture book
+  - book cover
+  - editorial illustration
+  - concept art
+  - fantasy art
+  - comic
+  - manga
+  - animation
+  - storyboard
+  - digital painting
+  - traditional media
+  - palette
+  - color mixing
+  - colour mixing
+  - ceramic
+  - sculpture
+  - mural
+  - engrav
+  - conservat
+  - restorat
+  - museum
+  - artwork
+  - fine art
+
+require_preferred: true
+min_score: 1

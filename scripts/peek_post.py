@@ -1,15 +1,23 @@
+import os
 import re
-import requests
-from src.lib import wp_config
+import sys
 
-wp = wp_config()
+import requests
+from dotenv import load_dotenv
+
+load_dotenv(".env")
+slug = sys.argv[1] if len(sys.argv) > 1 else "cannes-lions-2026-rezonans-nishi-analogovyj-renessans"
+base = os.environ["WP_URL"].rstrip("/")
+auth = (os.environ["WP_USER"], os.environ["WP_APP_PASSWORD"].replace(" ", ""))
 r = requests.get(
-    f"{wp['url']}/wp-json/wp/v2/posts/10430",
-    params={"context": "edit"},
-    auth=(wp["user"], wp["password"]),
+    f"{base}/wp-json/wp/v2/posts",
+    params={"slug": slug, "context": "edit", "status": "any"},
+    auth=auth,
+    timeout=30,
 )
-p = r.json()
-raw = p["content"]["raw"]
-print("raw len", len(raw))
-print("has cta", "bl-cta-banner" in raw)
-print("tail:", raw[-400:])
+p = r.json()[0]
+print("id", p["id"], "status", p["status"])
+print("title", p["title"]["raw"])
+content = p["content"]["raw"]
+m = re.search(r'href="([^"]+)"[^>]*rel="nofollow', content)
+print("source", m.group(1) if m else "?")

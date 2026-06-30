@@ -182,6 +182,9 @@ def translate_article(article_path: Path, skip_filter: bool = False) -> dict:
             raise RuntimeError(
                 f"Стоп-тема ({label}): «{keyword}» — перевод не запущен. Используйте другую статью."
             )
+        from src.content_focus import ensure_focus_allowed
+
+        ensure_focus_allowed(title_en, html_to_source_text(body_en))
 
     prompts = load_prompt_config()
     system = prompts["system"].format(

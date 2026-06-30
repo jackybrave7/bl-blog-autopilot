@@ -22,6 +22,12 @@ from src.lib import (
     mark_skipped,
 )
 from src.content_filter import find_blocked_topic
+from src.content_focus import (
+    check_url_allowed,
+    entry_preview_text,
+    is_source_blocked,
+    score_text,
+)
 
 USER_AGENT = (
     "Mozilla/5.0 (compatible; BLBlogAutopilot/1.0; +https://www.bl-school.com/blog)"
@@ -37,11 +43,16 @@ def log(msg: str) -> None:
     print(msg, flush=True)
 
 
+def sort_sources(sources: list[dict]) -> list[dict]:
+    """Lower priority number = try earlier (1 = illustration/craft feeds)."""
+    return sorted(sources, key=lambda s: (s.get("priority", 2), s.get("id", "")))
+
+
 def sources_for_today(weekday: int | None = None) -> list[dict]:
     wd = weekday if weekday is not None else datetime.now().weekday()
-    all_sources = load_sources()
+    all_sources = sort_sources(load_sources())
     today = [s for s in all_sources if wd in s.get("weekdays", list(range(7)))]
-    return today or all_sources
+    return sort_sources(today) if today else all_sources
 
 
 def parse_feed(url: str) -> feedparser.FeedParserDict:
@@ -50,13 +61,45 @@ def parse_feed(url: str) -> feedparser.FeedParserDict:
     return feedparser.parse(resp.content)
 
 
+def load_active_sources(weekday: int | None = None) -> list[dict]:
+    return [s for s in sources_for_today(weekday) if not is_source_blocked(s.get("id", ""))]
+
+
 def pick_entry(source: dict) -> feedparser.FeedParserDict | None:
+    if is_source_blocked(source.get("id", "")):
+        return None
     feed = parse_feed(source["url"])
+    candidates: list[tuple[int, feedparser.FeedParserDict]] = []
+    priority_bonus = max(0, 4 - int(source.get("priority", 2))) * 5
+
     for entry in feed.entries:
         link = entry.get("link")
-        if link and not is_published(link) and not is_skipped(link):
-            return entry
-    return None
+        if not link or is_published(link) or is_skipped(link):
+            continue
+        url_block = check_url_allowed(link)
+        if url_block:
+            title = (entry.get("title") or "")[:60]
+            log(f"  ⊘ {url_block}: {title}…")
+            mark_skipped(link, url_block, "off-topic", entry.get("title", ""))
+            continue
+        preview = entry_preview_text(entry)
+        article_score, skip_reason = score_text(preview)
+        if skip_reason:
+            title = (entry.get("title") or "")[:60]
+            log(f"  ⊘ {skip_reason}: {title}…")
+            mark_skipped(link, skip_reason, "off-topic", entry.get("title", ""))
+            continue
+        candidates.append((article_score + priority_bonus, entry))
+
+    if not candidates:
+        return None
+    candidates.sort(key=lambda item: item[0], reverse=True)
+    return candidates[0][1]
+
+
+def html_to_plain(html: str) -> str:
+    soup = BeautifulSoup(html, "lxml")
+    return soup.get_text(" ", strip=True)
 
 
 def fullsize_image_url(url: str) -> str:
@@ -210,8 +253,8 @@ def fetch_next(weekday: int | None = None) -> dict:
         log(f"Синхронизация WP: +{sync['added']} URL в published.json")
 
     errors: list[str] = []
-    today_sources = sources_for_today(weekday)
-    all_sources = load_sources()
+    today_sources = load_active_sources(weekday)
+    all_sources = [s for s in sort_sources(load_sources()) if not is_source_blocked(s.get("id", ""))]
     passes = [today_sources]
     if today_sources != all_sources:
         passes.append(all_sources)
@@ -233,6 +276,11 @@ def fetch_next(weekday: int | None = None) -> dict:
             url = entry["link"]
             title_from_feed = entry.get("title", "")
             log(f"  ✓ статья: {title_from_feed[:60]}…")
+            url_block = check_url_allowed(url)
+            if url_block:
+                log(f"  ⊘ {url_block}")
+                mark_skipped(url, url_block, "off-topic", title_from_feed)
+                continue
             try:
                 title, content_html = fetch_article_html(url)
             except requests.RequestException as exc:
@@ -247,6 +295,12 @@ def fetch_next(weekday: int | None = None) -> dict:
                 log(f"  ⊘ стоп-тема «{label}»: {keyword}")
                 mark_skipped(url, f"{label}: {keyword}", category, title or title_from_feed)
                 continue
+            focus_score, focus_skip = score_text(title_from_feed, title, html_to_plain(content_html))
+            if focus_skip:
+                log(f"  ⊘ {focus_skip}")
+                mark_skipped(url, focus_skip, "off-topic", title or title_from_feed)
+                continue
+            log(f"  ✓ фокус score={focus_score}")
             image_meta = extract_images_structured(url)
             run_id = datetime.now().strftime("%Y%m%d_%H%M%S")
             pending_dir = PENDING_DIR / run_id
