@@ -2,10 +2,12 @@
 
 from __future__ import annotations
 
+import functools
 import json
 import os
 from pathlib import Path
 
+import requests
 import yaml
 from dotenv import load_dotenv
 
@@ -21,10 +23,26 @@ def load_env() -> None:
     load_dotenv(ROOT / ".env")
 
 
+@functools.lru_cache(maxsize=1)
+def _resolved_wp_base_url() -> str:
+    """Follow WP_URL redirects once so POST requests are not turned into GET."""
+    load_env()
+    url = os.environ["WP_URL"].rstrip("/")
+    try:
+        resp = requests.get(f"{url}/wp-json/", allow_redirects=True, timeout=15)
+        resp.raise_for_status()
+        final = resp.url
+        if "/wp-json" in final:
+            return final.split("/wp-json")[0].rstrip("/")
+    except requests.RequestException:
+        pass
+    return url
+
+
 def wp_config() -> dict:
     load_env()
     return {
-        "url": os.environ["WP_URL"].rstrip("/"),
+        "url": _resolved_wp_base_url(),
         "user": os.environ["WP_USER"],
         "password": os.environ["WP_APP_PASSWORD"].replace(" ", ""),
         "status": os.environ.get("WP_POST_STATUS", "draft"),
