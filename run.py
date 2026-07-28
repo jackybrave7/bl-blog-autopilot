@@ -8,10 +8,10 @@ import json
 from pathlib import Path
 
 
-def cmd_fetch(weekday: int | None, out: Path | None) -> None:
+def cmd_fetch(weekday: int | None, out: Path | None, skip_sync: bool = False) -> None:
     from src.fetch_article import fetch_next
 
-    article = fetch_next(weekday)
+    article = fetch_next(weekday, skip_sync=skip_sync)
     path = out or Path("data/pending") / article["run_id"] / "article.json"
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(article, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -104,6 +104,11 @@ def main() -> None:
     fetch_p = sub.add_parser("fetch", help="Fetch next article from RSS")
     fetch_p.add_argument("--weekday", type=int, help="0=Mon … 6=Sun")
     fetch_p.add_argument("--out", type=Path)
+    fetch_p.add_argument(
+        "--skip-sync",
+        action="store_true",
+        help="Skip WordPress sync (use when published.json is already up to date)",
+    )
 
     pub_p = sub.add_parser("publish", help="Publish translated article to WordPress")
     pub_p.add_argument("--article", required=True, type=Path)
@@ -139,7 +144,7 @@ def main() -> None:
 
     args = parser.parse_args()
     if args.command == "fetch":
-        cmd_fetch(args.weekday, args.out)
+        cmd_fetch(args.weekday, args.out, args.skip_sync)
     elif args.command == "publish":
         cmd_publish(args.article, args.title, args.body_file, args.excerpt, args.update, args.force)
     elif args.command == "check":
