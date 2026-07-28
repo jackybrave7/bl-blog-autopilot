@@ -45,7 +45,7 @@ def sync_published_from_wp(*, dry_run: bool = False) -> dict:
                 "context": "edit",
             },
             auth=auth,
-            timeout=60,
+            timeout=240,
         )
         if resp.status_code == 400:
             break
