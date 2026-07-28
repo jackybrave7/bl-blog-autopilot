@@ -39,13 +39,14 @@ def sync_published_from_wp(*, dry_run: bool = False) -> dict:
         resp = SESSION.get(
             f"{base}/wp-json/wp/v2/posts",
             params={
-                "per_page": 100,
+                "per_page": 1,
                 "page": page,
                 "status": "any",
-                "context": "edit",
+                "context": "view",
+                "_fields": "id,title,status,content",
             },
             auth=auth,
-            timeout=240,
+            timeout=60,
         )
         if resp.status_code == 400:
             break
@@ -55,13 +56,14 @@ def sync_published_from_wp(*, dry_run: bool = False) -> dict:
             break
 
         for post in posts:
-            source_url = extract_source_url(post["content"]["raw"])
+            content = post.get("content", {}).get("rendered", "")
+            source_url = extract_source_url(content)
             if not source_url:
                 continue
             entry = {
                 "source_url": source_url,
                 "wp_post_id": post["id"],
-                "title": post["title"]["raw"],
+                "title": post.get("title", {}).get("rendered", ""),
                 "status": post["status"],
             }
             prev = by_url.get(source_url)

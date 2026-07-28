@@ -143,7 +143,7 @@ def upload_media(file_path: Path, wp: dict) -> tuple[int, str]:
                 "Content-Type": mime,
             },
             data=f.read(),
-            timeout=60,
+            timeout=240,
         )
     resp.raise_for_status()
     media = resp.json()
@@ -336,7 +336,7 @@ def publish(
         f"{wp['url']}/wp-json/wp/v2/posts",
         auth=(wp["user"], wp["password"]),
         json=payload,
-        timeout=60,
+        timeout=240,
     )
     resp.raise_for_status()
     post = resp.json()
@@ -390,7 +390,7 @@ def update_post(
         f"{wp['url']}/wp-json/wp/v2/posts/{post_id}",
         auth=(wp["user"], wp["password"]),
         json=payload,
-        timeout=60,
+        timeout=240,
     )
     resp.raise_for_status()
     post = resp.json()
