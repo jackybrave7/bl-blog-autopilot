@@ -135,19 +135,27 @@ def upload_media(file_path: Path, wp: dict) -> tuple[int, str]:
     mime, _ = mimetypes.guess_type(file_path.name)
     mime = mime or "image/jpeg"
     with open(file_path, "rb") as f:
-        resp = SESSION.post(
-            f"{wp['url']}/wp-json/wp/v2/media",
-            auth=(wp["user"], wp["password"]),
-            headers={
-                "Content-Disposition": f'attachment; filename="{file_path.name}"',
-                "Content-Type": mime,
-            },
-            data=f.read(),
-            timeout=60,
-        )
-    resp.raise_for_status()
-    media = resp.json()
-    return media["id"], media["source_url"]
+        data = f.read()
+    for attempt in range(1, 4):
+        try:
+            resp = SESSION.post(
+                f"{wp['url']}/wp-json/wp/v2/media",
+                auth=(wp["user"], wp["password"]),
+                headers={
+                    "Content-Disposition": f'attachment; filename="{file_path.name}"',
+                    "Content-Type": mime,
+                },
+                data=data,
+                timeout=180,
+            )
+            resp.raise_for_status()
+            media = resp.json()
+            return media["id"], media["source_url"]
+        except (requests.exceptions.Timeout, requests.exceptions.ConnectionError):
+            if attempt == 3:
+                raise
+            time.sleep(4 * attempt)
+    raise RuntimeError("upload_media failed")
 
 
 def upload_images(images: list[dict], wp: dict) -> list[dict]:
