@@ -7,6 +7,7 @@ import html
 import json
 import mimetypes
 import re
+import time
 from pathlib import Path
 
 import requests
@@ -19,6 +20,23 @@ from src.lib import mark_published, wp_config, is_published
 
 SESSION = requests.Session()
 MORE_TAG = "<!--more-->"
+WP_POST_TIMEOUT = 180
+
+
+def _wp_json_request(method: str, url: str, wp: dict, **kwargs) -> requests.Response:
+    """WP REST call with retries on slow responses."""
+    auth = (wp["user"], wp["password"])
+    kwargs.setdefault("timeout", WP_POST_TIMEOUT)
+    for attempt in range(1, 4):
+        try:
+            resp = SESSION.request(method, url, auth=auth, **kwargs)
+            resp.raise_for_status()
+            return resp
+        except (requests.exceptions.Timeout, requests.exceptions.ConnectionError):
+            if attempt == 3:
+                raise
+            time.sleep(4 * attempt)
+    raise RuntimeError("wp request failed")
 
 
 def normalize_text(text: str) -> str:
@@ -279,6 +297,18 @@ def prepare_post_payload(
     source = data["source"]
     if uploaded is None:
         uploaded = upload_images(data.get("images", []), wp)
+    elif data.get("uploaded_media"):
+        # Reuse prior uploads; fill in any missing images from a failed publish.
+        uploaded_by_path = {
+            Path(u["local_path"]): u for u in uploaded if u.get("local_path")
+        }
+        for img in data.get("images", []):
+            path = Path(img["local_path"])
+            if path not in uploaded_by_path and path.exists():
+                media_id, media_url = upload_media(path, wp)
+                entry = {**img, "media_id": media_id, "media_url": media_url}
+                uploaded.append(entry)
+                uploaded_by_path[path] = entry
 
     source_images = data.get("images", [])
     hero = pick_hero(uploaded, source_images)
@@ -340,17 +370,16 @@ def publish(
             "Используйте --update <post_id> или удалите дубликат."
         )
 
-    resp = SESSION.post(
-        f"{wp['url']}/wp-json/wp/v2/posts",
-        auth=(wp["user"], wp["password"]),
-        json=payload,
-        timeout=60,
-    )
-    resp.raise_for_status()
-    post = resp.json()
-
     data["uploaded_media"] = uploaded
     article_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    resp = _wp_json_request(
+        "POST",
+        f"{wp['url']}/wp-json/wp/v2/posts",
+        wp,
+        json=payload,
+    )
+    post = resp.json()
 
     mark_published(data["source"]["url"], post["id"], title_ru)
     return {
@@ -394,17 +423,16 @@ def update_post(
     )
     has_read_more = payload.pop("_has_read_more", False)
 
-    resp = SESSION.post(
-        f"{wp['url']}/wp-json/wp/v2/posts/{post_id}",
-        auth=(wp["user"], wp["password"]),
-        json=payload,
-        timeout=60,
-    )
-    resp.raise_for_status()
-    post = resp.json()
-
     data["uploaded_media"] = uploaded
     article_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    resp = _wp_json_request(
+        "POST",
+        f"{wp['url']}/wp-json/wp/v2/posts/{post_id}",
+        wp,
+        json=payload,
+    )
+    post = resp.json()
 
     return {
         "post_id": post["id"],
