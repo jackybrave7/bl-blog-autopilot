@@ -7,6 +7,7 @@ import html
 import json
 import mimetypes
 import re
+import time
 from pathlib import Path
 
 import requests
@@ -134,20 +135,29 @@ def pick_inline_images(uploaded: list[dict], hero: dict | None) -> list[dict]:
 def upload_media(file_path: Path, wp: dict) -> tuple[int, str]:
     mime, _ = mimetypes.guess_type(file_path.name)
     mime = mime or "image/jpeg"
-    with open(file_path, "rb") as f:
-        resp = SESSION.post(
-            f"{wp['url']}/wp-json/wp/v2/media",
-            auth=(wp["user"], wp["password"]),
-            headers={
-                "Content-Disposition": f'attachment; filename="{file_path.name}"',
-                "Content-Type": mime,
-            },
-            data=f.read(),
-            timeout=240,
-        )
-    resp.raise_for_status()
-    media = resp.json()
-    return media["id"], media["source_url"]
+    data = file_path.read_bytes()
+    last_err: Exception | None = None
+    for attempt in range(3):
+        try:
+            resp = SESSION.post(
+                f"{wp['url']}/wp-json/wp/v2/media",
+                auth=(wp["user"], wp["password"]),
+                headers={
+                    "Content-Disposition": f'attachment; filename="{file_path.name}"',
+                    "Content-Type": mime,
+                },
+                data=data,
+                timeout=120,
+            )
+            resp.raise_for_status()
+            media = resp.json()
+            return media["id"], media["source_url"]
+        except requests.RequestException as exc:
+            last_err = exc
+            if attempt + 1 >= 3:
+                break
+            time.sleep(4 * (attempt + 1))
+    raise last_err  # type: ignore[misc]
 
 
 def upload_images(images: list[dict], wp: dict) -> list[dict]:
@@ -332,14 +342,25 @@ def publish(
             "Используйте --update <post_id> или удалите дубликат."
         )
 
-    resp = SESSION.post(
-        f"{wp['url']}/wp-json/wp/v2/posts",
-        auth=(wp["user"], wp["password"]),
-        json=payload,
-        timeout=240,
-    )
-    resp.raise_for_status()
-    post = resp.json()
+    last_err: Exception | None = None
+    for attempt in range(3):
+        try:
+            resp = SESSION.post(
+                f"{wp['url']}/wp-json/wp/v2/posts",
+                auth=(wp["user"], wp["password"]),
+                json=payload,
+                timeout=120,
+            )
+            resp.raise_for_status()
+            post = resp.json()
+            break
+        except requests.RequestException as exc:
+            last_err = exc
+            if attempt + 1 >= 3:
+                raise
+            time.sleep(4 * (attempt + 1))
+    else:
+        raise last_err  # type: ignore[misc]
 
     data["uploaded_media"] = uploaded
     article_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
