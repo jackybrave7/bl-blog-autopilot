@@ -5,12 +5,16 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import time
 
 import requests
 
 from src.lib import PUBLISHED_FILE, load_published, save_published, wp_config
 
 SESSION = requests.Session()
+# WP on bl-school.com times out on large batches with context=edit (heavy raw HTML).
+WP_SYNC_PER_PAGE = 1
+WP_SYNC_TIMEOUT = 120
 SOURCE_LINK_RE = re.compile(
     r'Источник:\s*<a\s+href="([^"]+)"',
     re.IGNORECASE,
@@ -20,6 +24,39 @@ SOURCE_LINK_RE = re.compile(
 def extract_source_url(content: str) -> str | None:
     match = SOURCE_LINK_RE.search(content)
     return match.group(1).strip() if match else None
+
+
+def _fetch_posts_page(
+    base: str,
+    auth: tuple[str, str],
+    page: int,
+    *,
+    max_attempts: int = 4,
+) -> requests.Response:
+    """Fetch one WP posts page; retry on read timeouts."""
+    params = {
+        "per_page": WP_SYNC_PER_PAGE,
+        "page": page,
+        "status": "any",
+        "context": "edit",
+    }
+    for attempt in range(1, max_attempts + 1):
+        try:
+            resp = SESSION.get(
+                f"{base}/wp-json/wp/v2/posts",
+                params=params,
+                auth=auth,
+                timeout=WP_SYNC_TIMEOUT,
+            )
+            if resp.status_code == 400:
+                return resp
+            resp.raise_for_status()
+            return resp
+        except (requests.exceptions.Timeout, requests.exceptions.ConnectionError):
+            if attempt == max_attempts:
+                raise
+            time.sleep(4 * attempt)
+    raise RuntimeError("unreachable")
 
 
 def sync_published_from_wp(*, dry_run: bool = False) -> dict:
@@ -36,17 +73,7 @@ def sync_published_from_wp(*, dry_run: bool = False) -> dict:
 
     page = 1
     while True:
-        resp = SESSION.get(
-            f"{base}/wp-json/wp/v2/posts",
-            params={
-                "per_page": 100,
-                "page": page,
-                "status": "any",
-                "context": "edit",
-            },
-            auth=auth,
-            timeout=60,
-        )
+        resp = _fetch_posts_page(base, auth, page)
         if resp.status_code == 400:
             break
         resp.raise_for_status()

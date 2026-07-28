@@ -379,12 +379,13 @@ def slugify(text: str) -> str:
     return text[:80].strip("-")
 
 
-def fetch_next(weekday: int | None = None) -> dict:
+def fetch_next(weekday: int | None = None, *, skip_sync: bool = False) -> dict:
     from src.sync_published import sync_published_from_wp
 
-    sync = sync_published_from_wp()
-    if sync["added"]:
-        log(f"Синхронизация WP: +{sync['added']} URL в published.json")
+    if not skip_sync:
+        sync = sync_published_from_wp()
+        if sync["added"]:
+            log(f"Синхронизация WP: +{sync['added']} URL в published.json")
 
     errors: list[str] = []
     today_sources = load_active_sources(weekday)
