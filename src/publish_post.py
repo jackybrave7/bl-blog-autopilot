@@ -143,7 +143,7 @@ def upload_media(file_path: Path, wp: dict) -> tuple[int, str]:
                 "Content-Type": mime,
             },
             data=f.read(),
-            timeout=60,
+            timeout=180,
         )
     resp.raise_for_status()
     media = resp.json()
