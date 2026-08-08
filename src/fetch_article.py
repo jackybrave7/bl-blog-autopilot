@@ -120,6 +120,7 @@ def _is_junk_image(url: str, img_tag) -> bool:
     if any(x in lower for x in (
         "gravatar", "pixel", "tracking", "avatar", "logo", "emoji",
         "spinner", "badge", "wp-smiley", "icon.svg", "doubleclick",
+        "boom-studio", "secret-email-club", "tt5_04",
     )):
         return True
     try:
@@ -172,7 +173,9 @@ def _extract_ghost_figures(soup: BeautifulSoup) -> list[dict]:
 
 def _extract_wordpress_figures(soup: BeautifulSoup, base_url: str) -> list[dict]:
     root = (
-        soup.select_one(".entry")
+        soup.select_one(".post-content")
+        or soup.select_one(".single-post .post-content")
+        or soup.select_one(".entry")
         or soup.select_one(".hentry")
         or soup.select_one("article .post-content")
         or soup.select_one("article")
