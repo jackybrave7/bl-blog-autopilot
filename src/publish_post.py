@@ -19,6 +19,7 @@ from src.lib import mark_published, wp_config, is_published
 
 SESSION = requests.Session()
 MORE_TAG = "<!--more-->"
+WP_REQUEST_TIMEOUT = 180
 
 
 def normalize_text(text: str) -> str:
@@ -143,7 +144,7 @@ def upload_media(file_path: Path, wp: dict) -> tuple[int, str]:
                 "Content-Type": mime,
             },
             data=f.read(),
-            timeout=60,
+            timeout=WP_REQUEST_TIMEOUT,
         )
     resp.raise_for_status()
     media = resp.json()
@@ -336,7 +337,7 @@ def publish(
         f"{wp['url']}/wp-json/wp/v2/posts",
         auth=(wp["user"], wp["password"]),
         json=payload,
-        timeout=60,
+        timeout=WP_REQUEST_TIMEOUT,
     )
     resp.raise_for_status()
     post = resp.json()
@@ -390,7 +391,7 @@ def update_post(
         f"{wp['url']}/wp-json/wp/v2/posts/{post_id}",
         auth=(wp["user"], wp["password"]),
         json=payload,
-        timeout=60,
+        timeout=WP_REQUEST_TIMEOUT,
     )
     resp.raise_for_status()
     post = resp.json()
