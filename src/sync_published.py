@@ -10,7 +10,6 @@ import requests
 
 from src.lib import PUBLISHED_FILE, load_published, save_published, wp_config
 
-SESSION = requests.Session()
 SOURCE_LINK_RE = re.compile(
     r'Источник:\s*<a\s+href="([^"]+)"',
     re.IGNORECASE,
@@ -18,6 +17,8 @@ SOURCE_LINK_RE = re.compile(
 WP_SYNC_PER_PAGE = 5
 WP_SYNC_TIMEOUT = 30
 WP_SYNC_RETRIES = 3
+WP_SYNC_MAX_PUBLISH_PAGES = 30
+WP_SYNC_MAX_DRAFT_PAGES = 15
 
 
 def extract_source_url(content: str) -> str | None:
@@ -29,20 +30,27 @@ def _fetch_posts_page(
     base: str,
     auth: tuple[str, str],
     *,
-    status: str,
     page: int,
+    status: str,
+    orderby: str | None = None,
+    order: str | None = None,
 ) -> list[dict] | None:
     last_error: Exception | None = None
+    params: dict[str, str | int] = {
+        "per_page": WP_SYNC_PER_PAGE,
+        "page": page,
+        "status": status,
+        "_fields": "id,title,status,content",
+    }
+    if orderby:
+        params["orderby"] = orderby
+    if order:
+        params["order"] = order
     for attempt in range(1, WP_SYNC_RETRIES + 1):
         try:
-            resp = SESSION.get(
+            resp = requests.get(
                 f"{base}/wp-json/wp/v2/posts",
-                params={
-                    "per_page": WP_SYNC_PER_PAGE,
-                    "page": page,
-                    "status": status,
-                    "_fields": "id,title,status,content",
-                },
+                params=params,
                 auth=auth,
                 timeout=WP_SYNC_TIMEOUT,
             )
@@ -76,17 +84,31 @@ def sync_published_from_wp(*, dry_run: bool = False) -> dict:
     auth = (wp["user"], wp["password"])
     base = wp["url"]
 
+    existing = load_published()
     by_url: dict[str, dict] = {
-        e["source_url"]: dict(e) for e in load_published() if e.get("source_url")
+        e["source_url"]: dict(e) for e in existing if e.get("source_url")
     }
     added: list[dict] = []
     refreshed: list[dict] = []
+    warnings: list[dict] = []
 
-    for status in ("publish", "draft"):
+    status_filters: list[dict[str, str | int]] = [
+        {"status": "draft"},
+        {"status": "publish", "orderby": "date", "order": "desc"},
+    ]
+    publish_page_limit = WP_SYNC_MAX_PUBLISH_PAGES
+    draft_page_limit = WP_SYNC_MAX_DRAFT_PAGES
+
+    for filters in status_filters:
         page = 1
         while True:
-            posts = _fetch_posts_page(base, auth, status=status, page=page)
+            if filters["status"] == "publish" and page > publish_page_limit:
+                break
+            if filters["status"] == "draft" and page > draft_page_limit:
+                break
+            posts = _fetch_posts_page(base, auth, page=page, **filters)
             if posts is None:
+                warnings.append({"status": filters["status"], "page": page, "error": "timeout"})
                 break
             if not posts:
                 break
@@ -123,8 +145,16 @@ def sync_published_from_wp(*, dry_run: bool = False) -> dict:
             page += 1
 
     entries = list(by_url.values())
-    if not dry_run:
+    if not dry_run and len(entries) >= len(existing):
         save_published(entries)
+    elif not dry_run and len(entries) < len(existing):
+        warnings.append(
+            {
+                "error": "sync_would_shrink_published_json",
+                "existing": len(existing),
+                "merged": len(entries),
+            }
+        )
 
     return {
         "total": len(entries),
@@ -132,6 +162,7 @@ def sync_published_from_wp(*, dry_run: bool = False) -> dict:
         "refreshed": len(refreshed),
         "added_posts": added,
         "refreshed_posts": refreshed,
+        "warnings": warnings,
         "file": str(PUBLISHED_FILE),
         "dry_run": dry_run,
     }
