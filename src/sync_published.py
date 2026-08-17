@@ -34,53 +34,57 @@ def sync_published_from_wp(*, dry_run: bool = False) -> dict:
     added: list[dict] = []
     refreshed: list[dict] = []
 
-    page = 1
-    while True:
-        resp = SESSION.get(
-            f"{base}/wp-json/wp/v2/posts",
-            params={
-                "per_page": 100,
-                "page": page,
-                "status": "any",
-                "context": "edit",
-            },
-            auth=auth,
-            timeout=60,
-        )
-        if resp.status_code == 400:
-            break
-        resp.raise_for_status()
-        posts = resp.json()
-        if not posts:
-            break
+    for status in ("publish", "draft"):
+        page = 1
+        while True:
+            resp = SESSION.get(
+                f"{base}/wp-json/wp/v2/posts",
+                params={
+                    "per_page": 100,
+                    "page": page,
+                    "status": status,
+                    "_fields": "id,title,status,content",
+                },
+                auth=auth,
+                timeout=120,
+            )
+            if resp.status_code == 400:
+                break
+            resp.raise_for_status()
+            posts = resp.json()
+            if not posts:
+                break
 
-        for post in posts:
-            source_url = extract_source_url(post["content"]["raw"])
-            if not source_url:
-                continue
-            entry = {
-                "source_url": source_url,
-                "wp_post_id": post["id"],
-                "title": post["title"]["raw"],
-                "status": post["status"],
-            }
-            prev = by_url.get(source_url)
-            if not prev:
-                by_url[source_url] = entry
-                added.append(entry)
-                continue
-            if prev.get("wp_post_id") != post["id"] or prev.get("title") != entry["title"]:
-                # Prefer published post if the same source appears twice.
-                if prev.get("status") == "publish" and entry["status"] != "publish":
+            for post in posts:
+                content = post.get("content", {})
+                raw_html = content.get("raw") or content.get("rendered") or ""
+                source_url = extract_source_url(raw_html)
+                if not source_url:
                     continue
-                if entry["status"] == "publish" and prev.get("status") != "publish":
+                title = post.get("title", {})
+                entry = {
+                    "source_url": source_url,
+                    "wp_post_id": post["id"],
+                    "title": title.get("raw") or title.get("rendered") or "",
+                    "status": post["status"],
+                }
+                prev = by_url.get(source_url)
+                if not prev:
                     by_url[source_url] = entry
-                    refreshed.append(entry)
-                elif prev.get("wp_post_id") != post["id"]:
-                    by_url[source_url] = entry
-                    refreshed.append(entry)
+                    added.append(entry)
+                    continue
+                if prev.get("wp_post_id") != post["id"] or prev.get("title") != entry["title"]:
+                    # Prefer published post if the same source appears twice.
+                    if prev.get("status") == "publish" and entry["status"] != "publish":
+                        continue
+                    if entry["status"] == "publish" and prev.get("status") != "publish":
+                        by_url[source_url] = entry
+                        refreshed.append(entry)
+                    elif prev.get("wp_post_id") != post["id"]:
+                        by_url[source_url] = entry
+                        refreshed.append(entry)
 
-        page += 1
+            page += 1
 
     entries = list(by_url.values())
     if not dry_run:
