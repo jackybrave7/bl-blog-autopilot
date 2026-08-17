@@ -31,7 +31,7 @@ def _fetch_posts_page(
     *,
     status: str,
     page: int,
-) -> list[dict]:
+) -> list[dict] | None:
     last_error: Exception | None = None
     for attempt in range(1, WP_SYNC_RETRIES + 1):
         try:
@@ -54,8 +54,20 @@ def _fetch_posts_page(
             last_error = exc
             if attempt < WP_SYNC_RETRIES:
                 continue
-            raise last_error from exc
-    return []
+    if last_error:
+        print(
+            json.dumps(
+                {
+                    "warning": "wp_sync_page_failed",
+                    "status": status,
+                    "page": page,
+                    "error": last_error.__class__.__name__,
+                },
+                ensure_ascii=False,
+            ),
+            flush=True,
+        )
+    return None
 
 
 def sync_published_from_wp(*, dry_run: bool = False) -> dict:
@@ -74,6 +86,8 @@ def sync_published_from_wp(*, dry_run: bool = False) -> dict:
         page = 1
         while True:
             posts = _fetch_posts_page(base, auth, status=status, page=page)
+            if posts is None:
+                break
             if not posts:
                 break
 
