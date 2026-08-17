@@ -15,6 +15,8 @@ SOURCE_LINK_RE = re.compile(
     r'Источник:\s*<a\s+href="([^"]+)"',
     re.IGNORECASE,
 )
+WP_SYNC_PER_PAGE = 5
+WP_SYNC_TIMEOUT = 120
 
 
 def extract_source_url(content: str) -> str | None:
@@ -40,13 +42,13 @@ def sync_published_from_wp(*, dry_run: bool = False) -> dict:
             resp = SESSION.get(
                 f"{base}/wp-json/wp/v2/posts",
                 params={
-                    "per_page": 100,
+                    "per_page": WP_SYNC_PER_PAGE,
                     "page": page,
                     "status": status,
                     "_fields": "id,title,status,content",
                 },
                 auth=auth,
-                timeout=120,
+                timeout=WP_SYNC_TIMEOUT,
             )
             if resp.status_code == 400:
                 break
