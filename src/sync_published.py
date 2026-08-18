@@ -8,9 +8,11 @@ import re
 
 import requests
 
-from src.lib import PUBLISHED_FILE, load_published, save_published, wp_config
+from src.lib import PUBLISHED_FILE, load_published, save_published, wp_api_timeout, wp_config
 
 SESSION = requests.Session()
+WP_SYNC_PER_PAGE = 5
+WP_SYNC_MAX_RETRIES = 3
 SOURCE_LINK_RE = re.compile(
     r'Источник:\s*<a\s+href="([^"]+)"',
     re.IGNORECASE,
@@ -36,17 +38,27 @@ def sync_published_from_wp(*, dry_run: bool = False) -> dict:
 
     page = 1
     while True:
-        resp = SESSION.get(
-            f"{base}/wp-json/wp/v2/posts",
-            params={
-                "per_page": 100,
-                "page": page,
-                "status": "any",
-                "context": "edit",
-            },
-            auth=auth,
-            timeout=60,
-        )
+        resp = None
+        for attempt in range(WP_SYNC_MAX_RETRIES):
+            try:
+                resp = SESSION.get(
+                    f"{base}/wp-json/wp/v2/posts",
+                    params={
+                        "per_page": WP_SYNC_PER_PAGE,
+                        "page": page,
+                        "status": "any",
+                        "context": "edit",
+                        "_fields": "id,title,content,status",
+                    },
+                    auth=auth,
+                    timeout=wp_api_timeout(),
+                )
+                break
+            except (requests.Timeout, requests.ConnectionError):
+                if attempt + 1 >= WP_SYNC_MAX_RETRIES:
+                    raise
+        if resp is None:
+            break
         if resp.status_code == 400:
             break
         resp.raise_for_status()
