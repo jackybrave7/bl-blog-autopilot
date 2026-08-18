@@ -332,11 +332,11 @@ def publish(
             "Используйте --update <post_id> или удалите дубликат."
         )
 
-    resp = SESSION.post(
+    resp = requests.post(
         f"{wp['url']}/wp-json/wp/v2/posts",
         auth=(wp["user"], wp["password"]),
         json=payload,
-        timeout=60,
+        timeout=(10, 180),
     )
     resp.raise_for_status()
     post = resp.json()
@@ -386,11 +386,11 @@ def update_post(
     )
     has_read_more = payload.pop("_has_read_more", False)
 
-    resp = SESSION.post(
+    resp = requests.post(
         f"{wp['url']}/wp-json/wp/v2/posts/{post_id}",
         auth=(wp["user"], wp["password"]),
         json=payload,
-        timeout=60,
+        timeout=(10, 180),
     )
     resp.raise_for_status()
     post = resp.json()
