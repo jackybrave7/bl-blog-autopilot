@@ -10,16 +10,46 @@ import requests
 
 from src.lib import PUBLISHED_FILE, load_published, save_published, wp_config
 
-SESSION = requests.Session()
 SOURCE_LINK_RE = re.compile(
     r'Источник:\s*<a\s+href="([^"]+)"',
     re.IGNORECASE,
 )
 
+# Keep sync fast: small pages, limited depth, no Session (can hang on WP).
+SYNC_PER_PAGE = 5
+SYNC_MAX_PAGES = {"publish": 30, "draft": 15}
+
 
 def extract_source_url(content: str) -> str | None:
     match = SOURCE_LINK_RE.search(content)
     return match.group(1).strip() if match else None
+
+
+def _fetch_posts(base: str, auth: tuple[str, str], status: str) -> list[dict]:
+    posts: list[dict] = []
+    max_pages = SYNC_MAX_PAGES.get(status, 30)
+    page = 1
+    while page <= max_pages:
+        resp = requests.get(
+            f"{base}/wp-json/wp/v2/posts",
+            params={
+                "per_page": SYNC_PER_PAGE,
+                "page": page,
+                "status": status,
+                "_fields": "id,content,title,status",
+            },
+            auth=auth,
+            timeout=60,
+        )
+        if resp.status_code == 400:
+            break
+        resp.raise_for_status()
+        batch = resp.json()
+        if not batch:
+            break
+        posts.extend(batch)
+        page += 1
+    return posts
 
 
 def sync_published_from_wp(*, dry_run: bool = False) -> dict:
@@ -34,34 +64,18 @@ def sync_published_from_wp(*, dry_run: bool = False) -> dict:
     added: list[dict] = []
     refreshed: list[dict] = []
 
-    page = 1
-    while True:
-        resp = SESSION.get(
-            f"{base}/wp-json/wp/v2/posts",
-            params={
-                "per_page": 100,
-                "page": page,
-                "status": "any",
-                "context": "edit",
-            },
-            auth=auth,
-            timeout=60,
-        )
-        if resp.status_code == 400:
-            break
-        resp.raise_for_status()
-        posts = resp.json()
-        if not posts:
-            break
-
-        for post in posts:
-            source_url = extract_source_url(post["content"]["raw"])
+    for status in ("publish", "draft"):
+        for post in _fetch_posts(base, auth, status):
+            content = post.get("content", {})
+            rendered = content.get("rendered") or content.get("raw") or ""
+            source_url = extract_source_url(rendered)
             if not source_url:
                 continue
+            title = post.get("title", {})
             entry = {
                 "source_url": source_url,
                 "wp_post_id": post["id"],
-                "title": post["title"]["raw"],
+                "title": title.get("rendered") or title.get("raw") or "",
                 "status": post["status"],
             }
             prev = by_url.get(source_url)
@@ -79,8 +93,6 @@ def sync_published_from_wp(*, dry_run: bool = False) -> dict:
                 elif prev.get("wp_post_id") != post["id"]:
                     by_url[source_url] = entry
                     refreshed.append(entry)
-
-        page += 1
 
     entries = list(by_url.values())
     if not dry_run:
