@@ -260,6 +260,27 @@ def build_content_html(
     return "\n\n".join([body_with_teaser, cta, footer])
 
 
+def ensure_published(wp: dict, post: dict) -> dict:
+    """Force live status if WordPress saved the REST create as draft/pending."""
+    if post.get("status") == "publish":
+        return post
+    post_id = int(post["id"])
+    resp = SESSION.post(
+        f"{wp['url']}/wp-json/wp/v2/posts/{post_id}",
+        auth=(wp["user"], wp["password"]),
+        json={"status": "publish"},
+        timeout=60,
+    )
+    resp.raise_for_status()
+    published = resp.json()
+    if published.get("status") != "publish":
+        raise RuntimeError(
+            f"WordPress сохранил пост #{post_id} как {published.get('status')}, "
+            "а не publish. У пользователя WP_USER должно быть право publish_posts."
+        )
+    return published
+
+
 def prepare_post_payload(
     data: dict,
     title_ru: str,
@@ -323,6 +344,7 @@ def publish(
             body_ru,
         )
     payload, uploaded = prepare_post_payload(data, title_ru, body_ru, excerpt_ru, wp)
+    payload["status"] = "publish"
     has_read_more = payload.pop("_has_read_more", False)
 
     source_url = data.get("source", {}).get("url", "")
@@ -339,7 +361,7 @@ def publish(
         timeout=60,
     )
     resp.raise_for_status()
-    post = resp.json()
+    post = ensure_published(wp, resp.json())
 
     data["uploaded_media"] = uploaded
     article_path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -384,6 +406,7 @@ def update_post(
     payload, uploaded = prepare_post_payload(
         data, title_ru, body_ru, excerpt_ru, wp, uploaded=uploaded
     )
+    payload.pop("status", None)
     has_read_more = payload.pop("_has_read_more", False)
 
     resp = SESSION.post(

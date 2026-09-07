@@ -27,7 +27,7 @@ def wp_config() -> dict:
         "url": os.environ["WP_URL"].rstrip("/"),
         "user": os.environ["WP_USER"],
         "password": os.environ["WP_APP_PASSWORD"].replace(" ", ""),
-        "status": os.environ.get("WP_POST_STATUS", "draft"),
+        "status": os.environ.get("WP_POST_STATUS", "publish") or "publish",
         "cta_html": os.environ.get("CTA_HTML", ""),
     }
 
