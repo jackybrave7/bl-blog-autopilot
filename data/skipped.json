@@ -1,1 +1,524 @@
-[]
+[
+  {
+    "source_url": "https://illustrationage.com/2020/12/02/steering-the-relation-ship/",
+    "category": "off-topic",
+    "reason": "не по теме блога: «creative industry»",
+    "title": "Steering the Relation Ship"
+  },
+  {
+    "source_url": "https://illustrationage.com/2020/07/13/black-students-matter-an-interview-with-the-creator-of-blackatsva/",
+    "category": "ethnic_hatred",
+    "reason": "межнациональная неприязнь: racist",
+    "title": "| Black Students Matter - An Interview with the Creator of BlackAtSVAILLUSTRATION AGE"
+  },
+  {
+    "source_url": "https://makingamark.blogspot.com/2026/08/is-your-framer-still-in-business.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Is your framer still in business?"
+  },
+  {
+    "source_url": "https://makingamark.blogspot.com/2026/08/RMS-Annual-Exhibition-2026-call-for-entries.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Final Call for Online Entries: RMS Annual Exhibition 2026"
+  },
+  {
+    "source_url": "https://makingamark.blogspot.com/2026/08/final-call-discerning-eye-exhibition-2026.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Final Call: The Discerning Eye Exhibition 2026"
+  },
+  {
+    "source_url": "https://makingamark.blogspot.com/2026/08/tributes-to-anthony-j-lester-1945-2026.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Tributes to Anthony J Lester (1945-2026)"
+  },
+  {
+    "source_url": "https://makingamark.blogspot.com/2026/08/the-return-of-visitor-map.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The return of the visitor map!"
+  },
+  {
+    "source_url": "https://makingamark.blogspot.com/2026/08/BBC2-the-big-deal-episode1-review.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Big Deal - a programme about selling art"
+  },
+  {
+    "source_url": "https://makingamark.blogspot.com/2026/07/self-assessment-payment-due-31-July.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "HEADS UP - HMRC Self Assessment: Payment on Account due 31 July"
+  },
+  {
+    "source_url": "https://makingamark.blogspot.com/2026/07/service-is-interrupted-due-to-heatwave.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Service is interrupted due to the heatwave"
+  },
+  {
+    "source_url": "https://makingamark.blogspot.com/2026/06/review-new-english-art-club-annual-exhibition-2026.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Review: New English Art Club Annual Exhibition 2026"
+  },
+  {
+    "source_url": "https://thevirtualinstructor.com/blog/how-to-draw-an-orange-slice-with-pastels",
+    "category": "politics",
+    "reason": "политика: election",
+    "title": "How to Draw an Orange Slice with Pastels"
+  },
+  {
+    "source_url": "https://www.thisiscolossal.com/2026/09/ocean-photographer-of-the-year-2026-winners/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Diminutive Seahorses Top the 2026 Ocean Photographer of the Year Contest"
+  },
+  {
+    "source_url": "https://www.paris-art.com/lignes-surfaces/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Lignes & Surfaces"
+  },
+  {
+    "source_url": "https://www.paris-art.com/nature/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Nature • André Rouillé"
+  },
+  {
+    "source_url": "https://www.paris-art.com/escaliers/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Escaliers"
+  },
+  {
+    "source_url": "https://www.paris-art.com/bleu-du-ciel/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Bleu du ciel"
+  },
+  {
+    "source_url": "https://www.paris-art.com/affranchi/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Affranchi"
+  },
+  {
+    "source_url": "https://www.paris-art.com/ovni-folies-8e-edition/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "OVNi folies ! 8e édition"
+  },
+  {
+    "source_url": "https://www.paris-art.com/adler-a-focus-art-fair/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "ADLER à Focus Art Boom"
+  },
+  {
+    "source_url": "https://www.paris-art.com/joonhong-min-a-focus-art-boom/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Joonhong Min à Focus Art Boom"
+  },
+  {
+    "source_url": "https://www.paris-art.com/focus-on-art-boom-une-foire-pour-une-renaissance-de-lart/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Focus Art Boom : une foire pour une renaissance de l’art"
+  },
+  {
+    "source_url": "https://www.paris-art.com/la-vie-invisible-des-oeuvres-de-femmes-par-des-femmes/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "La Vie invisible: des œuvres de femmes par des femmes"
+  },
+  {
+    "source_url": "https://www.paris-art.com/martine-face-au-covid-400-dessins/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Martine face au Covid. 400 dessins"
+  },
+  {
+    "source_url": "https://www.paris-art.com/vera-molnar-decouper-deplacer-ajuster-coller/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Découper, déplacer, ajuster, coller"
+  },
+  {
+    "source_url": "https://www.paris-art.com/misleidys-castillo-pedroso-carreau-du-temple-drawing-now-art-fair/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Salon du dessin"
+  },
+  {
+    "source_url": "https://www.printmag.com/sponsored/if-design-on-the-experience-of-everyday-life/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "iF Design on the Experience of Everyday Life"
+  },
+  {
+    "source_url": "https://www.printmag.com/daily-heller/the-daily-heller-ahh-remembrances-of-republican-conventions-past/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Daily Heller: Remembrance of an Election Past"
+  },
+  {
+    "source_url": "https://www.printmag.com/what-matters/what-matters-to-rachel-effendy/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "What Matters to Rachel Effendy"
+  },
+  {
+    "source_url": "https://www.printmag.com/creative-voices/the-art-of-nyc-streets/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Art of NYC Streets"
+  },
+  {
+    "source_url": "https://www.printmag.com/daily-heller/the-daily-heller-activate-your-art/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Daily Heller: Activate Your Art, Whatever and Wherever"
+  },
+  {
+    "source_url": "https://www.printmag.com/what-matters/what-matters-to-annika-whelander/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "What Matters to Annika Welander"
+  },
+  {
+    "source_url": "https://www.printmag.com/daily-heller/paolo-garretto-was-my-pen-pal/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Daily Heller: Paolo Garretto Was My Pen Pal, Reprised"
+  },
+  {
+    "source_url": "https://www.printmag.com/daily-heller/the-daily-heller-return-to-separated-at-birth/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Daily Heller: Return to Separated at Birth"
+  },
+  {
+    "source_url": "https://www.printmag.com/daily-heller/the-daily-heller-george-hardie/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Daily Heller: Five Decades of George Hardie’s Design in London"
+  },
+  {
+    "source_url": "https://www.printmag.com/daily-heller/the-daily-heller-the-little-printing-presses-that-could/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Daily Heller: The Little Printing Press That Could"
+  },
+  {
+    "source_url": "https://www.printmag.com/design-culture/dolly-partons-love-for-all-things-printed/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Dolly Parton’s Love For All Things Printed"
+  },
+  {
+    "source_url": "https://www.printmag.com/daily-heller/the-daily-heller-brad-holland-exhibition/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Daily Heller: The Legacy of Brad Holland, American Illustrator"
+  },
+  {
+    "source_url": "https://www.printmag.com/branding-identity-design/bar-supernova-onbox-brand-identity/",
+    "category": "off-topic",
+    "reason": "тренды/маркетинг без практики художника: «branding»",
+    "title": "ONBOX Crowdsourced 100 Letters Hand-Painted at a Pop-Up for Bar Supernova’s Crafted Identity"
+  },
+  {
+    "source_url": "https://www.printmag.com/what-matters/what-matters-to-maggie-walsh/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "What Matters to Maggie Walsh"
+  },
+  {
+    "source_url": "https://www.printmag.com/daily-heller/the-daily-heller-unwrapping-the-flag-and-its-satiric-meanings/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Daily Heller: Unwrapping the Flag and Its Satiric Meanderings"
+  },
+  {
+    "source_url": "https://www.printmag.com/dr-dori-cut/dr-doris-cut-100-words-no-filler-7/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Dr. Dori’s Cut: 100 Words. No Filler."
+  },
+  {
+    "source_url": "https://www.printmag.com/daily-heller/the-daily-heller-jules-feiffer-remembered/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Daily Heller: Jules Feiffer Remembered"
+  },
+  {
+    "source_url": "https://www.printmag.com/daily-heller/the-daily-heller-bummer-summer-cleanup/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Daily Heller: Bummer Summer Cleanup"
+  },
+  {
+    "source_url": "https://www.printmag.com/daily-heller/the-daily-heller-branding-the-new-york-worlds-fair/",
+    "category": "off-topic",
+    "reason": "тренды/маркетинг без практики художника: «branding»",
+    "title": "The Daily Heller: Branding the 1939 New York World’s Fair for Kids"
+  },
+  {
+    "source_url": "https://www.printmag.com/what-matters/what-matters-to-leah-umansky/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "What Matters to Leah Umansky"
+  },
+  {
+    "source_url": "https://www.printmag.com/daily-heller/the-daily-heller-seymour-chwast-95/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Daily Heller: Seymour Chwast, 95, Still Making Things!"
+  },
+  {
+    "source_url": "https://www.printmag.com/type-tuesday/gotham-variable-and-the-art-of-evolution/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Gotham Variable and the Art of Evolution"
+  },
+  {
+    "source_url": "https://www.printmag.com/design-news/egon-van-herreweghe-the-menu/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Egon Van Herreweghe Reveals the Artistry of Storefront Awnings in His Show ‘The Menu’"
+  },
+  {
+    "source_url": "https://www.printmag.com/daily-heller/the-daily-heller-crown-jewels-of-the-auto-industry/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Daily Heller: Crown Jewels of the Auto Industry"
+  },
+  {
+    "source_url": "https://www.printmag.com/daily-heller/the-daily-heller-designers-are-artists-too/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Daily Heller: Designers as Artists, Too"
+  },
+  {
+    "source_url": "https://www.printmag.com/branding-identity-design/instagram-refreshes-its-look-for-a-new-era/",
+    "category": "off-topic",
+    "reason": "тренды/маркетинг без практики художника: «branding»",
+    "title": "Instagram Refreshes Its Look for a New Era"
+  },
+  {
+    "source_url": "https://www.printmag.com/daily-heller/the-daily-heller-male-magazine/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Daily Heller: What is Wrong With These Pictures?"
+  },
+  {
+    "source_url": "https://www.printmag.com/daily-heller/the-daily-heller-theres-a-sucker-born-every-minute/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Daily Heller: There’s a Sucker Born Every Minute"
+  },
+  {
+    "source_url": "https://www.printmag.com/what-matters/what-matters-to-justin-wong/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "What Matters to Justin Wong"
+  },
+  {
+    "source_url": "https://www.printmag.com/daily-heller/the-daily-heller-irish-skies-are-smiling/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Daily Heller: Irish Skies Are Smiling"
+  },
+  {
+    "source_url": "https://www.printmag.com/daily-heller/the-daily-heller-two-craigs-back-again/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Daily Heller: Two Craigs Will Work for Food  and Fun"
+  },
+  {
+    "source_url": "https://www.printmag.com/branding-identity-design/they-found-the-identity-for-calder-gardens/",
+    "category": "off-topic",
+    "reason": "тренды/маркетинг без практики художника: «branding»",
+    "title": "They Found the Identity for Calder Gardens"
+  },
+  {
+    "source_url": "https://www.printmag.com/daily-heller/the-daily-heller-a-day-for-laboring-over-the-drawing-board/",
+    "category": "politics",
+    "reason": "политика: congress",
+    "title": "The Daily Heller: A Day for Laboring Over the Drawing Board - PRINT Magazine"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2026/05/2026-5-8.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": ""
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2026/03/blog-post.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "유튜브에서 '이아츠' 검색하면..."
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2024/12/my-first-robot-dreami.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "나의 첫 로봇 드림이 출간!  [My first robot Dreami ]"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2024/01/the-pufferfish-spike-adventures-of.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The pufferfish Spike: -The Adventures of 'Spike' the Pufferfish"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2024/01/whispering-fairy-guri-friendship-of.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Whispering Fairy Guri: The Friendship of Baby Buffalo Moomoo and Dungfly Guri"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/02/my-little-journey-13.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #13"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/02/my-little-journey-12.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #12"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/02/my-little-journey-11.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #11"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/01/my-little-journey-10.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #10"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/01/my-little-journey-09.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #09"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/01/my-little-journey-08.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #08"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/01/my-little-journey-07.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #07"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/01/my-little-journey-06.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #06"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/01/my-little-journey-05.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #05"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/01/my-little-journey-04.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #04"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2021/12/my-little-journey-03.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #03"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2021/12/my-little-journey-02.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #02"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2021/12/my-little-journey-01.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #01"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2021/12/2021_42.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "2021년 충용미술전 회화부문 장려상 수상작"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2021/12/2021_2.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "2021년 충용미술전 공모전 디자인부문 출품작"
+  },
+  {
+    "source_url": "https://www.artistsnetwork.com/art-quiz/back-to-school-with-winslow-homer/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Back to School With Winslow Homer"
+  },
+  {
+    "source_url": "https://www.artistsnetwork.com/art-business/reinventing-visibility/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Reinventing Visibility"
+  },
+  {
+    "source_url": "https://www.artistsnetwork.com/artist-profiles/studio-snapshot-ovanes-berberian/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Studio Snapshot: Ovanes Berberian"
+  },
+  {
+    "source_url": "https://www.artistsnetwork.com/art-competitions-inspiration/pet-project-winners-of-the-5th-annual-best-in-show-pets-art-competition/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Pet Project | Winners of the 5th Annual Best in Show Pets Art Competition"
+  },
+  {
+    "source_url": "https://www.artistsnetwork.com/uncategorized/5th-annual-best-in-show-pets-art-competition-6-top-dogs/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "5th Annual Best in Show | Pets Art Competition: 6 Top Dogs"
+  },
+  {
+    "source_url": "https://www.artistsnetwork.com/art-competitions-inspiration/5th-annual-best-in-show-pets-art-competition-6-top-cats/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "5th Annual Best in Show | Pets Art Competition: 6 Top Cats"
+  },
+  {
+    "source_url": "https://www.artistsnetwork.com/art-competitions-inspiration/5th-annual-best-in-show-pets-art-competition-6-top-other-pets/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "5th Annual Best in Show | Pets Art Competition: 6 Top Other Pets"
+  },
+  {
+    "source_url": "https://www.artistsnetwork.com/art-inspiration/becoming-a-storyteller-through-your-art/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Becoming a Storyteller Through Your Art"
+  }
+]
