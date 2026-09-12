@@ -3,6 +3,7 @@
 
 # Источники целиком отключены (маркетинг / дизайн-тренды)
 blocked_source_ids:
+  - artists-network
   - creative-boom
   - creative-review
   - design-made-in-japan
