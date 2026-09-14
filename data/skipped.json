@@ -1,1 +1,626 @@
-[]
+[
+  {
+    "source_url": "https://www.cartoonbrew.com/newsletter/a-guide-to-the-perfect-pitch-richard-williams-final-film-guillermo-del-toro-on-ai-266481.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "A Guide To The Perfect Pitch; Richard Williams’ Final Film; Guillermo Del Toro On AI"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/artist-rights/blizzard-entertainment-union-contract-266400.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Nearly 1,900 Blizzard Workers Ratify First Union Contracts, Including Wage Increases And AI Guardrails"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/festivals/tiffcom-tokyo-film-festival-banquet-for-hungry-ghosts-266373.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "From Fukushima Drama To A Horror Anthology From ‘The Violinist’ Studio: 5 Animated Features Head To TIFFCOM"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/studios/stim-studio-european-expansion-266307.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Amid Industry Contraction, French ‘Coyote Vs. Acme’ Service Studio Stim Is Expanding"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/series/south-park-emmy-donald-trump-paramount-266308.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "‘South Park’ Wins First Emmy In 13 Years, Trolls Trump: ‘You Finally Got Your Emmy’"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/box-office-report/coyote-vs-acme-cars-akira-paw-patrol-chiikawa-266303.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "‘Coyote Vs. Acme’ Climbs To Third At Global Box Office; ‘Cars,’ ‘Akira’ Re-Releases Score Domestically"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/newsletter/frankelda-bros-next-film-white-house-propaganda-games-skibidi-loses-its-creator-266286.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "‘Frankelda’ Bros. Next Film; White House Propaganda Games; ‘Skibidi’ Loses Its Creator"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/feature-film/wile-e-coyote-vs-acme-david-zaslav-reddit-ama-266251.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Wile E. Coyote Shades David Zaslav In Looney Reddit AMA"
+  },
+  {
+    "source_url": "https://illustrationage.com/2020/07/13/black-students-matter-an-interview-with-the-creator-of-blackatsva/",
+    "category": "ethnic_hatred",
+    "reason": "межнациональная неприязнь: racist",
+    "title": "| Black Students Matter - An Interview with the Creator of BlackAtSVAILLUSTRATION AGE"
+  },
+  {
+    "source_url": "https://www.connaissancedesarts.com/arts-expositions/paris/le-petit-palais-a-paris-revele-eva-gonzales-etoile-filante-de-la-peinture-du-xixe-siecle-et-unique-eleve-de-manet-11215939/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Le Petit Palais à Paris révèle Eva Gonzalès, étoile filante de la peinture du XIXe siècle et unique élève de Manet"
+  },
+  {
+    "source_url": "https://www.connaissancedesarts.com/metiers_art/chaumet-louis-vuitton-berluti-les-secrets-des-maisons-de-luxe-de-lvmh-se-devoilent-lors-des-journees-particulieres-2026-11216141/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Chaumet, Louis Vuitton, Berluti : les secrets des maisons de luxe de LVMH se dévoilent lors des Journées Particulières 2026"
+  },
+  {
+    "source_url": "https://www.connaissancedesarts.com/metiers_art/luxe/le-reve-chez-lvmh-ne-vient-jamais-de-nulle-part-antoine-arnault-devoile-les-coulisses-des-journees-particulieres-2026-11216130/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "« Le rêve chez LVMH ne vient jamais de nulle part » : Antoine Arnault dévoile les coulisses des Journées Particulières 2026"
+  },
+  {
+    "source_url": "https://www.connaissancedesarts.com/marche-art/ventes-encheres/estimee-plus-de-430-000-euros-une-geante-replique-dystopique-de-la-tour-eiffel-va-etre-vendue-aux-encheres-a-paris-en-septembre-11216295/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Estimée plus de 430 000 euros, une géante réplique dystopique de la Tour Eiffel va être vendue aux enchères à Paris en septembre"
+  },
+  {
+    "source_url": "https://www.connaissancedesarts.com/artistes/exposition-tintoret-a-paris-4-chefs-doeuvre-du-maitre-venitien-du-clair-obscur-a-decouvrir-au-musee-jacquemart-andre-11215917/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Exposition Tintoret à Paris : 4 chefs-d’œuvre du maître vénitien à découvrir au musée Jacquemart-André"
+  },
+  {
+    "source_url": "https://www.connaissancedesarts.com/monuments-patrimoine/archeologie/archeologie-decouverte-en-turquie-une-mosaique-romaine-au-bestiaire-spectaculaire-revele-les-noms-dun-chat-et-dun-chien-11216217/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Archéologie : découverte en Turquie, une mosaïque romaine au bestiaire spectaculaire révèle les noms d’un chat et d’un chien"
+  },
+  {
+    "source_url": "https://www.connaissancedesarts.com/arts-expositions/photographie/une-decision-brutale-le-festival-de-photo-usimages-annule-par-le-maire-lfi-de-creil-11216223/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "« Une décision brutale » : le festival de photo Usimages annulé par le maire LFI de Creil"
+  },
+  {
+    "source_url": "https://www.connaissancedesarts.com/arts-expositions/paris/exposition-tintoret-je-ne-peux-pas-en-parler-sans-trembler-paris-redecouvre-un-geant-de-la-peinture-italienne-11215864/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Exposition Tintoret : « Je ne peux pas en parler sans trembler. » Paris redécouvre un géant de la peinture italienne"
+  },
+  {
+    "source_url": "https://hyperallergic.com/good-muslim-artist-bad-muslim-artist/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Good Muslim Artist, Bad Muslim Artist"
+  },
+  {
+    "source_url": "https://hyperallergic.com/the-battle-of-new-york/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Battle of New York"
+  },
+  {
+    "source_url": "https://hyperallergic.com/standing-in-the-shadow-of-no-towers/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Standing in the Shadow of No Towers"
+  },
+  {
+    "source_url": "https://hyperallergic.com/15-fall-art-ennials-from-st-louis-to-dakar/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "15 Fall Art -Ennials, From St. Louis to Dakar"
+  },
+  {
+    "source_url": "https://hyperallergic.com/school-of-visual-arts-ends-photography-mfa-program/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "School of Visual Arts Ends Photography MFA Program"
+  },
+  {
+    "source_url": "https://hyperallergic.com/joel-peter-witkins-god-loving-gender-bending-art/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Joel-Peter Witkin’s God-Loving, Gender-Bending Art"
+  },
+  {
+    "source_url": "https://hyperallergic.com/university-of-michigans-fully-funded-mfa-program-combines-studio-art-and-research/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "University of Michigan’s Fully Funded MFA Program Combines Studio Art and Research"
+  },
+  {
+    "source_url": "https://hyperallergic.com/ucr-arts-presents-dispatches-the-photography-of-douglas-mcculloh-1990-2025/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "UCR ARTS Presents Dispatches: The Photography of Douglas McCulloh, 1990–2025"
+  },
+  {
+    "source_url": "https://hyperallergic.com/uk-aids-memorial-quilt-to-come-home-to-scotland/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "UK AIDS Memorial Quilt to Come Home to Scotland"
+  },
+  {
+    "source_url": "https://hyperallergic.com/artists-reflect-on-25-years-since-9-11/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Artists Reflect on 25 Years Since 9/11"
+  },
+  {
+    "source_url": "https://hyperallergic.com/artists-reflect-on-9-11-and-the-wounds-of-the-war-on-terror/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Artists Reflect on 9/11 and the Wounds of the “War on Terror”"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/tobias-kaspar-at-wilde-geneve-99422?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Tobias Kaspar at Wilde"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/chambres-d-amis-turns-40-at-smak-ghent-82859?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "<i>Chambres d'Amis turns 40</i> at SMAK"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/open-end-at-ideal-leipzig-93384?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "<i>Open End</i> at IDEAL"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/liesl-raff-at-kunstverein-braunschweig-98234?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Liesl Raff at Kunstverein Braunschweig"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/tolia-astakhishvili-at-mumok-vienna-86553?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Tolia Astakhishvili at mumok"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/jasmin-werner-at-viborg-kunsthal-81479?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Jasmin Werner at Viborg Kunsthal"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/michael-e-smith-at-mass-moca-north-adams-80450?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Michael E. Smith at Mass MoCA"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/deshaun-price-at-galerie-buchholz-cologne-97806?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Deshaun Price at Galerie Buchholz"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/nina-beier-torbjorn-rodland-at-standard-oslo-97937?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Nina Beier, Torbjørn Rødland at STANDARD (OSLO)"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/ali-cherri-at-oakville-galleries-84430?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Ali Cherri at Oakville Galleries"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/roman-fabre-at-barsa-barcelona-99455?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Román Fabré at barsa"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/housekeeping-in-a-dangerous-time-at-sapieha-palace-vilnius-83783?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "<i>Housekeeping in a Dangerous Time</i> at Sapieha Palace"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/adam-pendleton-at-langen-foundation-dusseldorf-75734?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Adam Pendleton at Langen Foundation"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/sylvie-fleury-esben-weile-kjaer-at-andersen-s-contemporary-copenhagen-98201?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Sylvie Fleury & Esben Weile Kjær at Andersen's Contemporary"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/nina-konnemann-mark-roeder-at-timeshare-los-angeles-93053?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Nina Könnemann, Mark Roeder at Timeshare"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/richard-sides-at-mies-van-der-rohe-haus-berlin-97277?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Richard Sides at Mies van der Rohe Haus"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/horario-nobre-at-a-maior-viseu-90347?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "<i>Horário Nobre</i> at A MAIOR"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/joshua-abelow-at-gene-s-dispensary-91733?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Joshua Abelow at Forms, Hamtramck"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/john-m-armleder-at-kunsthaus-biel-centre-d-art-bienne-89621?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "John M Armleder at Kunsthaus Biel Centre d'art Bienne"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/mooni-perry-at-kunst-raum-mitte-berlin-91899?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Mooni Perry at Kunst Raum Mitte"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/giorgio-griffa-at-the-clark-williamstown-76094?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Giorgio Griffa at The Clark"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/avery-singer-at-hauser-wirth-zurich-84614?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Avery Singer at Hauser & Wirth"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/steffani-jemison-at-westfalischer-kunstverein-munster-86487?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Steffani Jemison at Westfälischer Kunstverein"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/nik-geene-at-can-vienna-83848?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Nik Geene at Can"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/call-me-gravity-at-wiels-brussels-87740?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "<i>Call me gravity</i> at WIELS"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/elias-hansen-at-halsey-mckay-east-hampton-93548?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Elias Hansen at Halsey McKay"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/light-in-august-at-troedsson-villa-nikko-93317?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "<i>Light in August</i> at Troedsson Villa"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/joshua-krum-at-laila-sydney-93944?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Joshua Krum at LAILA"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2026/05/2026-5-8.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": ""
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2026/03/blog-post.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "유튜브에서 '이아츠' 검색하면..."
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2024/12/my-first-robot-dreami.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "나의 첫 로봇 드림이 출간!  [My first robot Dreami ]"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2024/01/the-pufferfish-spike-adventures-of.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The pufferfish Spike: -The Adventures of 'Spike' the Pufferfish"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2024/01/whispering-fairy-guri-friendship-of.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Whispering Fairy Guri: The Friendship of Baby Buffalo Moomoo and Dungfly Guri"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/02/my-little-journey-13.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #13"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/02/my-little-journey-12.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #12"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/02/my-little-journey-11.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #11"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/01/my-little-journey-10.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #10"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/01/my-little-journey-09.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #09"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/01/my-little-journey-08.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #08"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/01/my-little-journey-07.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #07"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/01/my-little-journey-06.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #06"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/01/my-little-journey-05.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #05"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/01/my-little-journey-04.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #04"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2021/12/my-little-journey-03.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #03"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2021/12/my-little-journey-02.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #02"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2021/12/my-little-journey-01.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #01"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2021/12/2021_42.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "2021년 충용미술전 회화부문 장려상 수상작"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2021/12/2021_2.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "2021년 충용미술전 공모전 디자인부문 출품작"
+  },
+  {
+    "source_url": "https://www.artistsnetwork.com/artist-profiles/showstoppers-jimmy-wright/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Showstoppers: Jimmy Wright"
+  },
+  {
+    "source_url": "https://www.artistsnetwork.com/art-business/reinventing-visibility/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Reinventing Visibility"
+  },
+  {
+    "source_url": "https://www.artistsnetwork.com/artist-profiles/studio-snapshot-ovanes-berberian/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Studio Snapshot: Ovanes Berberian"
+  },
+  {
+    "source_url": "https://www.artistsnetwork.com/art-competitions-inspiration/pet-project-winners-of-the-5th-annual-best-in-show-pets-art-competition/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Pet Project | Winners of the 5th Annual Best in Show Pets Art Competition"
+  },
+  {
+    "source_url": "https://www.artistsnetwork.com/uncategorized/5th-annual-best-in-show-pets-art-competition-6-top-dogs/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "5th Annual Best in Show | Pets Art Competition: 6 Top Dogs"
+  },
+  {
+    "source_url": "https://www.artistsnetwork.com/art-competitions-inspiration/5th-annual-best-in-show-pets-art-competition-6-top-cats/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "5th Annual Best in Show | Pets Art Competition: 6 Top Cats"
+  },
+  {
+    "source_url": "https://www.artistsnetwork.com/art-competitions-inspiration/5th-annual-best-in-show-pets-art-competition-6-top-other-pets/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "5th Annual Best in Show | Pets Art Competition: 6 Top Other Pets"
+  },
+  {
+    "source_url": "https://www.artistsnetwork.com/art-inspiration/becoming-a-storyteller-through-your-art/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Becoming a Storyteller Through Your Art"
+  },
+  {
+    "source_url": "https://www.juxtapoz.com/news/painting/william-n-copley-x-rated-1972-1974-galerie-max-hetzler-berlin/",
+    "category": "pornography",
+    "reason": "порнография: pornograph",
+    "title": "Juxtapoz Magazine - William N. Copley \"X-Rated (1972-1974)\" @ Galerie Max Hetzler, Berlin"
+  },
+  {
+    "source_url": "https://makingamark.blogspot.com/2026/08/RMS-Annual-Exhibition-2026-call-for-entries.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Final Call for Online Entries: RMS Annual Exhibition 2026"
+  },
+  {
+    "source_url": "https://makingamark.blogspot.com/2026/08/final-call-discerning-eye-exhibition-2026.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Final Call: The Discerning Eye Exhibition 2026"
+  },
+  {
+    "source_url": "https://makingamark.blogspot.com/2026/08/the-return-of-visitor-map.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The return of the visitor map!"
+  },
+  {
+    "source_url": "https://makingamark.blogspot.com/2026/08/BBC2-the-big-deal-episode1-review.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Big Deal - a programme about selling art"
+  },
+  {
+    "source_url": "https://makingamark.blogspot.com/2026/07/self-assessment-payment-due-31-July.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "HEADS UP - HMRC Self Assessment: Payment on Account due 31 July"
+  },
+  {
+    "source_url": "https://makingamark.blogspot.com/2026/07/service-is-interrupted-due-to-heatwave.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Service is interrupted due to the heatwave"
+  },
+  {
+    "source_url": "https://makingamark.blogspot.com/2026/08/portrait-award-2026-artists-with-their-portraits-of-women.html",
+    "category": "politics",
+    "reason": "политика: politician",
+    "title": "MAKING A MARK: Portrait Award 2026 - Artists with their Paintings (Women)"
+  },
+  {
+    "source_url": "https://www.artasiapacific.com/news/ching-ling-wang-named-inaugural-nancy-chang-lee-curator-of-chinese-art-at-smithsonian/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Ching-Ling Wang Named Inaugural Nancy Chang Lee Curator of Chinese Art at Smithsonian"
+  },
+  {
+    "source_url": "https://www.artasiapacific.com/market/kiaf-seoul-at-25-a-market-split/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Kiaf SEOUL at 25: A Market Split"
+  },
+  {
+    "source_url": "https://www.artasiapacific.com/shows/in-search-of-lost-stillness-nothing-still-about-still-lifes-in-nanjing/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "In Search of Lost Stillness: “Nothing Still about Still Lifes” in Nanjing"
+  },
+  {
+    "source_url": "https://www.artasiapacific.com/news/lucien-smith-1989-2026/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Lucien Smith, 1989–2026"
+  },
+  {
+    "source_url": "https://www.artasiapacific.com/shows/poetry-goes-no-further-than-language-at-buxton-contemporary/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "“Poetry goes no further than language” at Buxton Contemporary"
+  },
+  {
+    "source_url": "https://www.artasiapacific.com/people/memory-and-stewardship-notes-from-south-korea/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Memory and Stewardship: Notes from South Korea"
+  },
+  {
+    "source_url": "https://www.artasiapacific.com/news/weekly-news-roundup-september-7-2026/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Weekly News Roundup: September 7, 2026"
+  },
+  {
+    "source_url": "https://www.artasiapacific.com/shows/laila-majid-and-inaam-zafars-body-quotidian-at-the-sharjah-art-foundation/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Laila Majid and Inaam Zafar’s “Body Quotidian” at the Sharjah Art Foundation"
+  },
+  {
+    "source_url": "https://www.artasiapacific.com/news/sydneys-powerhouse-parramatta-engulfed-in-turmoil-ahead-of-opening/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Sydney’s Powerhouse Parramatta Engulfed in Turmoil Ahead of Opening"
+  },
+  {
+    "source_url": "https://www.artasiapacific.com/art-award-2026-opens-global-call-with-over-usd-50-000-in-prizes/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": ".ART Award 2026 Opens Global Call With Over USD 50,000 in Prizes"
+  },
+  {
+    "source_url": "https://www.artasiapacific.com/people/roots-and-reach-dina-amin-on-building-saudi-arabias-visual-arts-ecosystem/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Roots and Reach: Dina Amin on Building Saudi Arabia’s Visual Arts Ecosystem"
+  },
+  {
+    "source_url": "https://www.artasiapacific.com/news/mark-feary-to-curate-2028-adelaide-biennial/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Mark Feary to Curate 2028 Adelaide Biennial"
+  }
+]
