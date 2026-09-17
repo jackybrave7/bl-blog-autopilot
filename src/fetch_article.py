@@ -281,10 +281,12 @@ def download_images_structured(image_meta: list[dict], dest: Path) -> list[dict]
     saved: list[dict] = []
     for i, meta in enumerate(image_meta):
         url = meta["source_url"]
+        if url.startswith("data:"):
+            continue
         try:
             resp = SESSION.get(url, timeout=ARTICLE_TIMEOUT)
             resp.raise_for_status()
-        except requests.RequestError:
+        except requests.RequestException:
             continue
         ext = Path(urlparse(url).path).suffix or ".jpg"
         if len(ext) > 5:
