@@ -19,6 +19,33 @@ from src.lib import mark_published, wp_config, is_published
 
 SESSION = requests.Session()
 MORE_TAG = "<!--more-->"
+# Hosting often returns 502 on multi‑MB uploads via REST.
+MAX_UPLOAD_BYTES = 2_000_000
+
+
+def prepare_upload_file(file_path: Path) -> tuple[Path, str]:
+    """Return path and MIME for WP media upload, downscaling huge local files when possible."""
+    mime, _ = mimetypes.guess_type(file_path.name)
+    mime = mime or "image/jpeg"
+    if file_path.stat().st_size <= MAX_UPLOAD_BYTES:
+        return file_path, mime
+    try:
+        from PIL import Image
+    except ImportError:
+        return file_path, mime
+
+    out = file_path.with_suffix(".upload.jpg")
+    img = Image.open(file_path)
+    if img.mode in ("RGBA", "P"):
+        base = Image.new("RGB", img.size, (255, 255, 255))
+        layer = img.convert("RGBA") if img.mode == "P" else img
+        base.paste(layer, mask=layer.split()[-1])
+        img = base
+    elif img.mode != "RGB":
+        img = img.convert("RGB")
+    img.thumbnail((1920, 1920), Image.Resampling.LANCZOS)
+    img.save(out, "JPEG", quality=85, optimize=True)
+    return out, "image/jpeg"
 
 
 def normalize_text(text: str) -> str:
@@ -132,14 +159,13 @@ def pick_inline_images(uploaded: list[dict], hero: dict | None) -> list[dict]:
 
 
 def upload_media(file_path: Path, wp: dict) -> tuple[int, str]:
-    mime, _ = mimetypes.guess_type(file_path.name)
-    mime = mime or "image/jpeg"
-    with open(file_path, "rb") as f:
+    upload_path, mime = prepare_upload_file(file_path)
+    with open(upload_path, "rb") as f:
         resp = SESSION.post(
             f"{wp['url']}/wp-json/wp/v2/media",
             auth=(wp["user"], wp["password"]),
             headers={
-                "Content-Disposition": f'attachment; filename="{file_path.name}"',
+                "Content-Disposition": f'attachment; filename="{upload_path.name}"',
                 "Content-Type": mime,
             },
             data=f.read(),
