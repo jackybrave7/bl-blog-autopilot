@@ -51,8 +51,13 @@ def save_published(entries: list[dict]) -> None:
         json.dump(entries, f, ensure_ascii=False, indent=2)
 
 
+def normalize_source_url(url: str) -> str:
+    return url.rstrip("/").lower()
+
+
 def is_published(url: str) -> bool:
-    return any(e.get("source_url") == url for e in load_published())
+    key = normalize_source_url(url)
+    return any(normalize_source_url(e.get("source_url", "")) == key for e in load_published())
 
 
 def load_skipped() -> list[dict]:
@@ -63,7 +68,8 @@ def load_skipped() -> list[dict]:
 
 
 def is_skipped(url: str) -> bool:
-    return any(e.get("source_url") == url for e in load_skipped())
+    key = normalize_source_url(url)
+    return any(normalize_source_url(e.get("source_url", "")) == key for e in load_skipped())
 
 
 def mark_skipped(source_url: str, reason: str, category: str, title: str = "") -> None:
@@ -109,6 +115,8 @@ def resolve_publish_fields(article_path: Path, title: str = "", excerpt: str = "
 
 def mark_published(source_url: str, wp_post_id: int, title: str) -> None:
     entries = load_published()
+    if is_published(source_url):
+        return
     entries.append(
         {
             "source_url": source_url,
