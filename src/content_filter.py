@@ -34,6 +34,21 @@ def _normalize(text: str) -> str:
     return text
 
 
+def _keyword_matches(blob: str, kw: str) -> bool:
+    if not kw:
+        return False
+    # Кириллические ключи — подстрока (стемы вроде «оппозици», «мобилизаци»).
+    if re.search(r"[а-яё]", kw):
+        return kw in blob
+    # Латинские — от границы слова, чтобы не ловить «election» в «selection».
+    escaped = re.escape(kw)
+    if " " in kw:
+        pattern = r"\b" + escaped.replace(r"\ ", r"\s+") + r"\b"
+    else:
+        pattern = r"\b" + escaped
+    return bool(re.search(pattern, blob))
+
+
 def find_blocked_topic(*texts: str) -> tuple[str, str, str] | None:
     """Возвращает (category_id, label, keyword) или None."""
     blob = _normalize(" ".join(t for t in texts if t))
@@ -43,7 +58,7 @@ def find_blocked_topic(*texts: str) -> tuple[str, str, str] | None:
         label = meta.get("label", category)
         for keyword in meta.get("keywords", []):
             kw = keyword.lower().replace("ё", "е")
-            if kw and kw in blob:
+            if _keyword_matches(blob, kw):
                 return category, label, keyword
     return None
 
