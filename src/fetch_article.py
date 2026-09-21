@@ -68,10 +68,7 @@ def load_active_sources(weekday: int | None = None) -> list[dict]:
     return [s for s in sources_for_today(weekday) if not is_source_blocked(s.get("id", ""))]
 
 
-def pick_entry(source: dict) -> feedparser.FeedParserDict | None:
-    if is_source_blocked(source.get("id", "")):
-        return None
-    feed = parse_feed(source["url"])
+def _rank_feed_entries(source: dict, feed: feedparser.FeedParserDict) -> list[feedparser.FeedParserDict]:
     candidates: list[tuple[int, feedparser.FeedParserDict]] = []
     priority_bonus = max(0, 4 - int(source.get("priority", 2))) * 5
 
@@ -94,10 +91,23 @@ def pick_entry(source: dict) -> feedparser.FeedParserDict | None:
             continue
         candidates.append((article_score + priority_bonus, entry))
 
-    if not candidates:
-        return None
     candidates.sort(key=lambda item: item[0], reverse=True)
-    return candidates[0][1]
+    return [entry for _, entry in candidates]
+
+
+def pick_entry(source: dict) -> feedparser.FeedParserDict | None:
+    if is_source_blocked(source.get("id", "")):
+        return None
+    feed = parse_feed(source["url"])
+    ranked = _rank_feed_entries(source, feed)
+    return ranked[0] if ranked else None
+
+
+def pick_entries(source: dict, limit: int = 8) -> list[feedparser.FeedParserDict]:
+    if is_source_blocked(source.get("id", "")):
+        return []
+    feed = parse_feed(source["url"])
+    return _rank_feed_entries(source, feed)[:limit]
 
 
 def html_to_plain(html: str) -> str:
@@ -399,60 +409,61 @@ def fetch_next(weekday: int | None = None) -> dict:
         for source in source_list:
             log(f"→ {source['name']}…")
             try:
-                entry = pick_entry(source)
+                entries = pick_entries(source)
             except requests.RequestException as exc:
                 log(f"  ✗ RSS: {exc.__class__.__name__}")
                 errors.append(f"{source['id']}: RSS {exc}")
                 continue
-            if not entry:
+            if not entries:
                 log("  — нет новых статей")
                 continue
-            url = entry["link"]
-            title_from_feed = entry.get("title", "")
-            log(f"  ✓ статья: {title_from_feed[:60]}…")
-            url_block = check_url_allowed(url)
-            if url_block:
-                log(f"  ⊘ {url_block}")
-                mark_skipped(url, url_block, "off-topic", title_from_feed)
-                continue
-            try:
-                title, content_html = fetch_article_html(url)
-            except requests.RequestException as exc:
-                log(f"  ✗ страница: {exc.__class__.__name__}")
-                errors.append(f"{source['id']}: article {exc}")
-                continue
-            if not title:
-                title = title_from_feed
-            blocked = find_blocked_topic(title_from_feed, title, content_html)
-            if blocked:
-                category, label, keyword = blocked
-                log(f"  ⊘ стоп-тема «{label}»: {keyword}")
-                mark_skipped(url, f"{label}: {keyword}", category, title or title_from_feed)
-                continue
-            focus_score, focus_skip = score_text(title_from_feed, title, html_to_plain(content_html))
-            if focus_skip:
-                log(f"  ⊘ {focus_skip}")
-                mark_skipped(url, focus_skip, "off-topic", title or title_from_feed)
-                continue
-            log(f"  ✓ фокус score={focus_score}")
-            image_meta = extract_images_structured(url)
-            run_id = datetime.now().strftime("%Y%m%d_%H%M%S")
-            pending_dir = PENDING_DIR / run_id
-            image_files = download_images_structured(image_meta, pending_dir)
-            log(f"  ✓ скачано картинок: {len(image_files)}")
-            return {
-                "run_id": run_id,
-                "source": {
-                    "id": source["id"],
-                    "name": source["name"],
-                    "url": url,
-                },
-                "category_ids": source.get("category_ids", [26]),
-                "title_en": title,
-                "content_html_en": content_html,
-                "images": image_files,
-                "suggested_slug": slugify(title),
-            }
+            for entry in entries:
+                url = entry["link"]
+                title_from_feed = entry.get("title", "")
+                log(f"  ✓ статья: {title_from_feed[:60]}…")
+                url_block = check_url_allowed(url)
+                if url_block:
+                    log(f"  ⊘ {url_block}")
+                    mark_skipped(url, url_block, "off-topic", title_from_feed)
+                    continue
+                try:
+                    title, content_html = fetch_article_html(url)
+                except requests.RequestException as exc:
+                    log(f"  ✗ страница: {exc.__class__.__name__}")
+                    errors.append(f"{source['id']}: article {exc}")
+                    break
+                if not title:
+                    title = title_from_feed
+                blocked = find_blocked_topic(title_from_feed, title, content_html)
+                if blocked:
+                    category, label, keyword = blocked
+                    log(f"  ⊘ стоп-тема «{label}»: {keyword}")
+                    mark_skipped(url, f"{label}: {keyword}", category, title or title_from_feed)
+                    continue
+                focus_score, focus_skip = score_text(title_from_feed, title, html_to_plain(content_html))
+                if focus_skip:
+                    log(f"  ⊘ {focus_skip}")
+                    mark_skipped(url, focus_skip, "off-topic", title or title_from_feed)
+                    continue
+                log(f"  ✓ фокус score={focus_score}")
+                image_meta = extract_images_structured(url)
+                run_id = datetime.now().strftime("%Y%m%d_%H%M%S")
+                pending_dir = PENDING_DIR / run_id
+                image_files = download_images_structured(image_meta, pending_dir)
+                log(f"  ✓ скачано картинок: {len(image_files)}")
+                return {
+                    "run_id": run_id,
+                    "source": {
+                        "id": source["id"],
+                        "name": source["name"],
+                        "url": url,
+                    },
+                    "category_ids": source.get("category_ids", [26]),
+                    "title_en": title,
+                    "content_html_en": content_html,
+                    "images": image_files,
+                    "suggested_slug": slugify(title),
+                }
     detail = "; ".join(errors) if errors else "all feeds empty or already published"
     raise RuntimeError(f"No unpublished articles found in today's sources. ({detail})")
 

@@ -43,7 +43,13 @@ def find_blocked_topic(*texts: str) -> tuple[str, str, str] | None:
         label = meta.get("label", category)
         for keyword in meta.get("keywords", []):
             kw = keyword.lower().replace("ё", "е")
-            if kw and kw in blob:
+            if not kw:
+                continue
+            # Latin keywords: whole-word match to avoid false hits (e.g. election in selection).
+            if re.search(r"[a-z]", kw):
+                if re.search(rf"(?<![a-z]){re.escape(kw)}(?![a-z])", blob):
+                    return category, label, keyword
+            elif kw in blob:
                 return category, label, keyword
     return None
 
