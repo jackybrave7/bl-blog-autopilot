@@ -284,7 +284,7 @@ def download_images_structured(image_meta: list[dict], dest: Path) -> list[dict]
         try:
             resp = SESSION.get(url, timeout=ARTICLE_TIMEOUT)
             resp.raise_for_status()
-        except requests.RequestError:
+        except requests.exceptions.RequestException:
             continue
         ext = Path(urlparse(url).path).suffix or ".jpg"
         if len(ext) > 5:
@@ -355,7 +355,7 @@ def download_images(image_urls: list[str], dest: Path) -> list[dict]:
         try:
             resp = SESSION.get(url, timeout=ARTICLE_TIMEOUT)
             resp.raise_for_status()
-        except requests.RequestError:
+        except requests.exceptions.RequestException:
             continue
         ext = Path(urlparse(url).path).suffix or ".jpg"
         if len(ext) > 5:
