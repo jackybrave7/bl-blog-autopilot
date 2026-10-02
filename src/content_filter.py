@@ -34,6 +34,18 @@ def _normalize(text: str) -> str:
     return text
 
 
+_WORD_EDGE = r"(?<![a-zа-яё])"
+_WORD_EDGE_END = r"(?![a-zа-яё])"
+
+
+def _keyword_matches(blob: str, kw: str) -> bool:
+    """Подстрока с границами слова (избегаем «гей» в «гейтс», «политик» в «политика»)."""
+    if not kw:
+        return False
+    pattern = _WORD_EDGE + re.escape(kw) + _WORD_EDGE_END
+    return re.search(pattern, blob) is not None
+
+
 def find_blocked_topic(*texts: str) -> tuple[str, str, str] | None:
     """Возвращает (category_id, label, keyword) или None."""
     blob = _normalize(" ".join(t for t in texts if t))
@@ -43,7 +55,7 @@ def find_blocked_topic(*texts: str) -> tuple[str, str, str] | None:
         label = meta.get("label", category)
         for keyword in meta.get("keywords", []):
             kw = keyword.lower().replace("ё", "е")
-            if kw and kw in blob:
+            if _keyword_matches(blob, kw):
                 return category, label, keyword
     return None
 
