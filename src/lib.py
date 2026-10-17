@@ -21,6 +21,13 @@ def load_env() -> None:
     load_dotenv(ROOT / ".env")
 
 
+def wp_api_timeout() -> tuple[int, int]:
+    """Connect + read timeouts for slow bl-school.com WP REST API."""
+    load_env()
+    read = int(os.environ.get("WP_API_READ_TIMEOUT", "300"))
+    return (30, read)
+
+
 def wp_config() -> dict:
     load_env()
     return {
