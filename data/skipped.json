@@ -1,1 +1,482 @@
-[]
+[
+  {
+    "source_url": "https://www.artistsnetwork.com/art-inspiration/how-artists-handle-criticism-11-insights-for-sorting-the-feedback/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "How Artists Handle Criticism: 11 Insights for Sorting the Feedback"
+  },
+  {
+    "source_url": "https://www.artistsnetwork.com/art-inspiration/creativity-kickstart-7-ways-to-let-curiosity-lead-your-art-practice/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Creativity Kickstart: 7 Ways to Let Curiosity Lead Your Art Practice"
+  },
+  {
+    "source_url": "https://www.artistsnetwork.com/art-inspiration/how-to-build-momentum-for-sustained-inspiration-and-discovery/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "How to Build Momentum for Sustained Inspiration and Discovery"
+  },
+  {
+    "source_url": "https://www.artistsnetwork.com/artist-profiles/studio-snapshot-rene-h-arceo/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Studio Snapshot: René H. Arceo"
+  },
+  {
+    "source_url": "https://www.artistsnetwork.com/art-inspiration/changing-your-media/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Changing Your Media"
+  },
+  {
+    "source_url": "https://www.artistsnetwork.com/artist-profiles/dedicated-to-the-natural-world-john-warren-oakes/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Dedicated to the Natural World: John Warren Oakes"
+  },
+  {
+    "source_url": "https://www.artistsnetwork.com/art-inspiration/the-beauty-of-the-unknown-in-art/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Beauty of the Unknown in Art"
+  },
+  {
+    "source_url": "https://www.artistsnetwork.com/art-quiz/sunrise-sunset-an-art-quiz/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Sunrise, Sunset: An Art Quiz"
+  },
+  {
+    "source_url": "https://www.artistsnetwork.com/art-exhibitions/america-250-4-art-museums-mark-the-u-s-semiquincentennial/",
+    "category": "politics",
+    "reason": "политика: congress",
+    "title": "America 250: 4 Art Museums Mark the U.S. Semiquincentennial | Artists Network"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/series/star-wars-visions-black-shinya-ohira-265543.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "‘Star Wars: Visions’ Director Shinya Ohira On Animating A Stormtrooper’s Psychological Collapse In ‘Black’ (EXCLUSIVE BTS)"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/educational/titmouse-foundation-warrior-art-camp-shorts-fellowship-2-265580.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Ten Teams Picked To Explore Global Myths And Folklore In Titmouse Foundation Short Film Fellowship (EXCLUSIVE)"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/newsletter/netflixs-theatrical-change-of-heart-juried-emmy-winners-coyote-vs-acme-details-265586.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Netflix’s Theatrical Change Of Heart; Juried Emmy Winners; ‘Coyote Vs. Acme’ Details"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/vfx/visual-effects-society-women-who-lead-summit-265583.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "VES Reveals Speaker Lineup For Inaugural Women Who Lead Summit"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/business/duolingo-acquires-animade-london-studio-265574.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Duolingo Buys London’s Animade, Its Third Animation Studio In Four Years"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/festivals/pictoplasma-nyc-program-speakers-265567.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Pictoplasma NYC Reveals Speakers And Programming For Its 2026 Conference"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/cartoon-brew-pick/amok-balazs-turai-short-film-265529.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Balázs Turai’s Brilliantly Twisted ‘Amok’ Is A Candy-Colored Psychological Nightmare"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/distribution/coyote-vs-acme-budget-distribution-265524.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Warner Bros. Spent $70M Making ‘Coyote Vs. Acme’; Ketchup Paid $50M To Put It In Theaters"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/feature-film/shiva-the-adiyogi-graphic-india-sadhguru-265479.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "‘The Legend Of Hanuman’ Creators Team With Sadhguru On Animated Feature ‘Shiva: The Adiyogi’"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/distribution/netflix-sony-theatrical-charlie-vs-the-chocolate-factory-265486.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Netflix’s Theatrical Animation Ambitions Take Monumental Step Forward With 47-Day Global ‘Charlie Vs. The Chocolate Factory’ Window"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/awards/primal-wakanda-mighty-nein-visions-juried-emmy-winners-265480.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "‘Primal,’ ‘Eyes Of Wakanda,’ ‘The Mighty Nein,’ ‘Star Wars: Visions’ Artists Score 2026 Juried Emmy Awards"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/series/dr-who-animated-preschool-series-cbeebies-265474.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "‘Doctor Who’ Heads to CBeebies With Dominic Minns Directing Preschool Spinoff"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/series/hidive-amc-nia-liston-tetsuryo-mbs-265470.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Hidive Expands Fall Anime Slate With ‘Nia Liston’ And ‘Tetsuryo,’ Extends MBS Deal"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/theme-parks/dragon-ball-theme-park-france-qiddiya-265456.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "France In Talks For €1 Billion ‘Dragon Ball’ Theme Park Near Paris"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/distribution/gkids-castle-in-the-sky-back-hayao-miyazaki-265459.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "GKIDS Is Bringing ‘Castle In The Sky’ Back To Theaters For Its 40th Anniversary"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/newsletter/youtube-doubles-monetization-threshold-doomsweepers-unveiled-netflix-teases-dang-265443.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "YouTube Doubles Monetization Threshold; ‘Doomsweepers’ Unveiled; Netflix Teases ‘DANG!’"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/series/netflix-dang-trailer-release-date-265444.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Netflix’s ‘DANG!’ Gets Trailer, Sets September Release Date"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/distribution/animation-plus-vice-tv-animation-mixtape-265534.html",
+    "category": "politics",
+    "reason": "политика: election",
+    "title": "Animation+ Launches Weekend Late-Night Block On Vice TV"
+  },
+  {
+    "source_url": "https://www.juxtapoz.com/news/painting/william-n-copley-x-rated-1972-1974-galerie-max-hetzler-berlin/",
+    "category": "pornography",
+    "reason": "порнография: pornograph",
+    "title": "Juxtapoz Magazine - William N. Copley \"X-Rated (1972-1974)\" @ Galerie Max Hetzler, Berlin"
+  },
+  {
+    "source_url": "https://makingamark.blogspot.com/2026/07/self-assessment-payment-due-31-July.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "HEADS UP - HMRC Self Assessment: Payment on Account due 31 July"
+  },
+  {
+    "source_url": "https://makingamark.blogspot.com/2026/07/service-is-interrupted-due-to-heatwave.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Service is interrupted due to the heatwave"
+  },
+  {
+    "source_url": "https://makingamark.blogspot.com/2026/06/review-new-english-art-club-annual-exhibition-2026.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Review: New English Art Club Annual Exhibition 2026"
+  },
+  {
+    "source_url": "https://makingamark.blogspot.com/2026/08/portrait-award-2026-artists-with-their-portraits-of-women.html",
+    "category": "politics",
+    "reason": "политика: politician",
+    "title": "MAKING A MARK: Portrait Award 2026 - Artists with their Paintings (Women)"
+  },
+  {
+    "source_url": "https://www.thisiscolossal.com/2026/08/great-women-photographers/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "A New Book Celebrates More Than 250 Trailblazing Women Photographers Across 200 Years"
+  },
+  {
+    "source_url": "https://www.thisiscolossal.com/2026/08/ocean-photographer-of-the-year-2026-photograph-finalists/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Ocean Photographer of the Year Finalists Highlight the Sorrowful and Sublime"
+  },
+  {
+    "source_url": "https://www.thisiscolossal.com/2026/08/inouye-telescope-national-science-foundation-sun-photo/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Get Up Close to the Sun in the Highest Resolution Image Ever Captured"
+  },
+  {
+    "source_url": "https://www.thisiscolossal.com/2026/08/meghann-stephenson-queen-of-the-neighborhood-paintings/",
+    "category": "politics",
+    "reason": "политика: politician",
+    "title": "Meghann Stephenson's Tender Paintings Contrast Women's Agency with 'Acceptable Behavior' - Colossal"
+  },
+  {
+    "source_url": "https://japan-forward.com/dakyu-equestrian-sport-200-years-aomori/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Japan's 200-Year-Old Equestrian Sport at a Crossroads"
+  },
+  {
+    "source_url": "https://japan-forward.com/hiroshima-bathhouse-sento-that-survived-atomic-bomb/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Hiroshima Bathhouse That Survived the Atomic Bomb"
+  },
+  {
+    "source_url": "https://japan-forward.com/tokyo-disneysea-25-anniversary-gondolier/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Tokyo DisneySea at 25: Gondolier Shares the Joy of Connecting With Guests"
+  },
+  {
+    "source_url": "https://japan-forward.com/delhi-street-honoring-shinzo-abe-india/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "A Street in Delhi for Shinzo Abe: A Tribute to a Man Who Brought India and Japan Closer"
+  },
+  {
+    "source_url": "https://japan-forward.com/taiwan-evergreen-symphony-orchestra-zweden-japan-debut/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Taiwan's Only Private Orchestra Makes Japan Debut Under Star Dutch Conductor"
+  },
+  {
+    "source_url": "https://japan-forward.com/shodoshima-soy-sauce-olive-groves-island-art/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Shodoshima Is Still One of Japan's Best Kept Island Secrets"
+  },
+  {
+    "source_url": "https://japan-forward.com/sado-wildlife-cresed-ibis-summer-habits/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Sado Wildlife in Focus | The Curious Summer Habits of Crested Ibises"
+  },
+  {
+    "source_url": "https://japan-forward.com/junglia-okinawa-struggles-to-meet-expectations-one-year-after-opening/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Junglia Okinawa Struggles to Meet Expectations One Year After Opening"
+  },
+  {
+    "source_url": "https://japan-forward.com/best-selling-mystery-novelist-keigo-higashino-dies-at-68/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Best-Selling Mystery Novelist Keigo Higashino Dies at 68"
+  },
+  {
+    "source_url": "https://japan-forward.com/asuka-fujiwara-world-heritage-ancient-diplomacy/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Nara Ruins Win World Heritage Status, Reveal Ancient Lesson in Shrewd Diplomacy"
+  },
+  {
+    "source_url": "https://www.paris-art.com/lignes-surfaces/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Lignes & Surfaces"
+  },
+  {
+    "source_url": "https://www.paris-art.com/nature/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Nature • André Rouillé"
+  },
+  {
+    "source_url": "https://www.paris-art.com/escaliers/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Escaliers"
+  },
+  {
+    "source_url": "https://www.paris-art.com/bleu-du-ciel/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Bleu du ciel"
+  },
+  {
+    "source_url": "https://www.paris-art.com/affranchi/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Affranchi"
+  },
+  {
+    "source_url": "https://www.paris-art.com/ovni-folies-8e-edition/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "OVNi folies ! 8e édition"
+  },
+  {
+    "source_url": "https://www.paris-art.com/adler-a-focus-art-fair/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "ADLER à Focus Art Boom"
+  },
+  {
+    "source_url": "https://www.paris-art.com/sally-gabori-une-artiste-aborigene/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Sally Gabori, une artiste aborigène"
+  },
+  {
+    "source_url": "https://www.paris-art.com/joonhong-min-a-focus-art-boom/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Joonhong Min à Focus Art Boom"
+  },
+  {
+    "source_url": "https://www.paris-art.com/focus-on-art-boom-une-foire-pour-une-renaissance-de-lart/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Focus Art Boom : une foire pour une renaissance de l’art"
+  },
+  {
+    "source_url": "https://www.paris-art.com/la-vie-invisible-des-oeuvres-de-femmes-par-des-femmes/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "La Vie invisible: des œuvres de femmes par des femmes"
+  },
+  {
+    "source_url": "https://www.paris-art.com/martine-face-au-covid-400-dessins/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Martine face au Covid. 400 dessins"
+  },
+  {
+    "source_url": "https://www.paris-art.com/vera-molnar-decouper-deplacer-ajuster-coller/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Découper, déplacer, ajuster, coller"
+  },
+  {
+    "source_url": "https://www.paris-art.com/misleidys-castillo-pedroso-carreau-du-temple-drawing-now-art-fair/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Salon du dessin"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2026/05/2026-5-8.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": ""
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2026/03/blog-post.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "유튜브에서 '이아츠' 검색하면..."
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2024/12/my-first-robot-dreami.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "나의 첫 로봇 드림이 출간!  [My first robot Dreami ]"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2024/01/the-pufferfish-spike-adventures-of.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The pufferfish Spike: -The Adventures of 'Spike' the Pufferfish"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2024/01/whispering-fairy-guri-friendship-of.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Whispering Fairy Guri: The Friendship of Baby Buffalo Moomoo and Dungfly Guri"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/02/my-little-journey-13.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #13"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/02/my-little-journey-12.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #12"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/02/my-little-journey-11.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #11"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/01/my-little-journey-10.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #10"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/01/my-little-journey-09.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #09"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/01/my-little-journey-08.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #08"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/01/my-little-journey-07.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #07"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/01/my-little-journey-06.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #06"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/01/my-little-journey-05.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #05"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/01/my-little-journey-04.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #04"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2021/12/my-little-journey-03.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #03"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2021/12/my-little-journey-02.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #02"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2021/12/my-little-journey-01.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #01"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2021/12/2021_42.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "2021년 충용미술전 회화부문 장려상 수상작"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2021/12/2021_2.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "2021년 충용미술전 공모전 디자인부문 출품작"
+  }
+]
