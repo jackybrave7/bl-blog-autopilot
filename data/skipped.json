@@ -1,1 +1,1460 @@
-[]
+[
+  {
+    "source_url": "https://www.artistsnetwork.com/art-inspiration/creativity-kickstart-7-ways-to-let-curiosity-lead-your-art-practice/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Creativity Kickstart: 7 Ways to Let Curiosity Lead Your Art Practice"
+  },
+  {
+    "source_url": "https://www.artistsnetwork.com/art-inspiration/how-to-build-momentum-for-sustained-inspiration-and-discovery/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "How to Build Momentum for Sustained Inspiration and Discovery"
+  },
+  {
+    "source_url": "https://www.artistsnetwork.com/artist-profiles/studio-snapshot-rene-h-arceo/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Studio Snapshot: René H. Arceo"
+  },
+  {
+    "source_url": "https://www.artistsnetwork.com/art-inspiration/changing-your-media/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Changing Your Media"
+  },
+  {
+    "source_url": "https://www.artistsnetwork.com/artist-profiles/dedicated-to-the-natural-world-john-warren-oakes/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Dedicated to the Natural World: John Warren Oakes"
+  },
+  {
+    "source_url": "https://www.artistsnetwork.com/art-inspiration/the-beauty-of-the-unknown-in-art/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Beauty of the Unknown in Art"
+  },
+  {
+    "source_url": "https://www.artistsnetwork.com/art-quiz/sunrise-sunset-an-art-quiz/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Sunrise, Sunset: An Art Quiz"
+  },
+  {
+    "source_url": "https://www.artistsnetwork.com/artist-profiles/studio-spotlight-jody-guralnick/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Studio Spotlight: Jody Guralnick"
+  },
+  {
+    "source_url": "https://www.artistsnetwork.com/art-exhibitions/america-250-4-art-museums-mark-the-u-s-semiquincentennial/",
+    "category": "politics",
+    "reason": "политика: congress",
+    "title": "America 250: 4 Art Museums Mark the U.S. Semiquincentennial | Artists Network"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/animators/ivan-li-independent-animator-265353.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Waffles, Wanking, And Other Worlds: The Films Of Ivan Li"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/newsletter/epic-spaceman-profile-ed-catmull-joins-ai-jury-disneys-q3-profits-265350.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Epic Spaceman Profile; Ed Catmull Joins AI Jury; Disney’s Q3 Profits"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/shorts/gauze-butterfly-academy-awards-oscars-265341.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Academy-Honored Shorts ‘Butterfly’ And ‘Gauze’ Use Water, Memory, And Animation To Confront Genocide"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/business/rwby-film-and-tv-projects-in-development-at-gotham-group-viz-media-265338.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "‘RWBY’ Film And TV Projects In Development At Gotham Group, Viz Media"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/educational/epic-spaceman-toby-lockerbie-youtube-science-channel-265274.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Epic Spaceman On Solo-Building One Of YouTube’s Top Science Channels, Making The Universe Comprehensible, And Rejecting GenAI"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/feature-film/cocomelon-the-movie-teaser-trailer-265293.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "First ‘CoComelon: The Movie’ Trailer Previews The Franchise’s Theatrical Expansion"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/streaming/disney-tiktok-fan-made-shorts-disney-plus-265286.html",
+    "category": "off-topic",
+    "reason": "тренды/маркетинг без практики художника: «tiktok»",
+    "title": "Disney And TikTok Strike Deal To Bring Fan-Made Short-Form Videos To Disney+"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/awards/student-academy-award-winners-2026-265276.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Academy Unveils 2026 Student Academy Award Winners"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/artificial-intelligence/ed-catmull-higgsfield-ai-competition-265227.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Pixar Co-Founder Ed Catmull Joins Jury For GenAI Film Competition"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/artist-rights/asifa-hollywood-frank-gladstone-president-265236.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Frank Gladstone Elected ASIFA-Hollywood President, Replacing Retiring Sue Shakespeare"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/festivals/tokyo-international-film-festival-tiffcom-265231.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "TIFFCOM 2026 To Spotlight Anime, Japanese IP, And International Co-Productions"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/artificial-intelligence/eli-roth-ice-cream-man-genai-265223.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Eli Roth Confirms ‘Ice Cream Man’ GenAI Use After First Describing A Traditional Animation Process"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/business/disney-earnings-report-tariff-refund-265218.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Disney Profits Soar After Three Rounds Of Layoffs, Millions In Tax Credits, And $100M Tariff Refund"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/newsletter/500-artist-chinese-epic-uscs-xa-shutdown-survivor-rotoscoping-sex-265165.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "500-Artist Chinese Epic; USC’s XA Shutdown Survivor; Rotoscoping Sex"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/shorts/don-hertzfeldt-films-streaming-dropout-265140.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Don Hertzfeldt’s Films Find A New Streaming Home At Dropout"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/series/flying-bark-olan-rogers-lightfold-265160.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Flying Bark And Olan Rogers’ Lightfold Team Up For Original Animation Project"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/feature-film/sun-xun-magic-atlas-interview-265154.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Peering Through the Cracks: How Sun Xun Spent A Decade Creating The Chinese Epic ‘Magic Atlas’ With 500 Artists"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/feature-film/cherry-and-virgin-masanao-kawajiri-interview-265139.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "‘Cherry And Virgin’ Director Masanao Kawajiri On Rotoscoping Sex And The Emotions That Come With It"
+  },
+  {
+    "source_url": "https://www.cartoonbrew.com/shorts/70-deadly-sins-tara-hou-usc-xa-265118.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "‘The 70 Deadly Sins’ Turned The Shock Of USC’s XA Shutdown Into An Experimental Short (EXCLUSIVE)"
+  },
+  {
+    "source_url": "https://www.juxtapoz.com/news/painting/william-n-copley-x-rated-1972-1974-galerie-max-hetzler-berlin/",
+    "category": "pornography",
+    "reason": "порнография: pornograph",
+    "title": "Juxtapoz Magazine - William N. Copley \"X-Rated (1972-1974)\" @ Galerie Max Hetzler, Berlin"
+  },
+  {
+    "source_url": "https://makingamark.blogspot.com/2026/07/self-assessment-payment-due-31-July.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "HEADS UP - HMRC Self Assessment: Payment on Account due 31 July"
+  },
+  {
+    "source_url": "https://makingamark.blogspot.com/2026/07/service-is-interrupted-due-to-heatwave.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Service is interrupted due to the heatwave"
+  },
+  {
+    "source_url": "https://makingamark.blogspot.com/2026/06/review-new-english-art-club-annual-exhibition-2026.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Review: New English Art Club Annual Exhibition 2026"
+  },
+  {
+    "source_url": "https://makingamark.blogspot.com/2026/05/shoulder-replacement-half-way.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "SHOULDER REPLACEMENT: Half Way"
+  },
+  {
+    "source_url": "https://makingamark.blogspot.com/2026/08/portrait-award-2026-artists-with-their-portraits-of-women.html",
+    "category": "politics",
+    "reason": "политика: politician",
+    "title": "MAKING A MARK: Portrait Award 2026 - Artists with their Paintings (Women)"
+  },
+  {
+    "source_url": "https://www.thisiscolossal.com/2026/08/american-wood-column-corporation-closes/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "New York City’s Last Standing Wood Column Company Closes After 110 Years"
+  },
+  {
+    "source_url": "https://www.thisiscolossal.com/2026/08/pure-street-photography-awards-2026-contest-winners/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Winners of the 2026 Pure Street Photography Awards Invoke Happenstance and Commotion"
+  },
+  {
+    "source_url": "https://www.thisiscolossal.com/2026/08/silly-little-plastic-cat-short-film/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "A Short Film Sheds Light on the Garfield Phones Washing Up on a French Beach Since the ’80s"
+  },
+  {
+    "source_url": "https://www.thisiscolossal.com/2026/08/bodega-cats-of-new-york-dan-rimada-gulce-kilkis-book/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "‘Bodega Cats of New York’ Advocates for the City’s Beloved Feline Shopkeepers"
+  },
+  {
+    "source_url": "https://www.thisiscolossal.com/2026/08/lydia-hansen-fungi-hunts-crocheted-mushrooms-minnesota/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Lydia Hansen Introduces Hikers to Native Midwest Mushrooms on Crocheted ‘Fungi Hunts’"
+  },
+  {
+    "source_url": "https://japan-forward.com/utsukushigahara-highland-where-art-meets-nature-nagano/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Hidden Wonders | A Highland Plateau Where Art Meets Nature in Nagano"
+  },
+  {
+    "source_url": "https://japan-forward.com/delhi-street-honoring-shinzo-abe-india/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "A Street in Delhi for Shinzo Abe: A Tribute to a Man Who Brought India and Japan Closer"
+  },
+  {
+    "source_url": "https://japan-forward.com/taiwan-evergreen-symphony-orchestra-zweden-japan-debut/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Taiwan's Only Private Orchestra Makes Japan Debut Under Star Dutch Conductor"
+  },
+  {
+    "source_url": "https://japan-forward.com/arakawa-line-tokyo-retro-fourth-class-level-crossings/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Hidden Wonders | Railway Crossings With No Bells or Barriers"
+  },
+  {
+    "source_url": "https://japan-forward.com/shodoshima-soy-sauce-olive-groves-island-art/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Shodoshima Is Still One of Japan's Best Kept Island Secrets"
+  },
+  {
+    "source_url": "https://japan-forward.com/sado-wildlife-cresed-ibis-summer-habits/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Sado Wildlife in Focus | The Curious Summer Habits of Crested Ibises"
+  },
+  {
+    "source_url": "https://japan-forward.com/junglia-okinawa-struggles-to-meet-expectations-one-year-after-opening/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Junglia Okinawa Struggles to Meet Expectations One Year After Opening"
+  },
+  {
+    "source_url": "https://japan-forward.com/best-selling-mystery-novelist-keigo-higashino-dies-at-68/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Best-Selling Mystery Novelist Keigo Higashino Dies at 68"
+  },
+  {
+    "source_url": "https://japan-forward.com/asuka-fujiwara-world-heritage-ancient-diplomacy/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Nara Ruins Win World Heritage Status, Reveal Ancient Lesson in Shrewd Diplomacy"
+  },
+  {
+    "source_url": "https://japan-forward.com/kendo-event-japanese-embassy-beijing-popularity-china/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Why Kendo Is Winning Fans in China"
+  },
+  {
+    "source_url": "https://japan-forward.com/hidden-wonders-a-quiet-edo-garden-next-door-to-tokyo-dome/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Hidden Wonders | A Quiet Edo Garden Next Door to Tokyo Dome"
+  },
+  {
+    "source_url": "https://www.paris-art.com/lignes-surfaces/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Lignes & Surfaces"
+  },
+  {
+    "source_url": "https://www.paris-art.com/nature/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Nature • André Rouillé"
+  },
+  {
+    "source_url": "https://www.paris-art.com/escaliers/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Escaliers"
+  },
+  {
+    "source_url": "https://www.paris-art.com/bleu-du-ciel/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Bleu du ciel"
+  },
+  {
+    "source_url": "https://www.paris-art.com/affranchi/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Affranchi"
+  },
+  {
+    "source_url": "https://www.paris-art.com/ovni-folies-8e-edition/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "OVNi folies ! 8e édition"
+  },
+  {
+    "source_url": "https://www.paris-art.com/adler-a-focus-art-fair/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "ADLER à Focus Art Boom"
+  },
+  {
+    "source_url": "https://www.paris-art.com/sally-gabori-une-artiste-aborigene/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Sally Gabori, une artiste aborigène"
+  },
+  {
+    "source_url": "https://www.paris-art.com/joonhong-min-a-focus-art-boom/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Joonhong Min à Focus Art Boom"
+  },
+  {
+    "source_url": "https://www.paris-art.com/focus-on-art-boom-une-foire-pour-une-renaissance-de-lart/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Focus Art Boom : une foire pour une renaissance de l’art"
+  },
+  {
+    "source_url": "https://www.paris-art.com/la-vie-invisible-des-oeuvres-de-femmes-par-des-femmes/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "La Vie invisible: des œuvres de femmes par des femmes"
+  },
+  {
+    "source_url": "https://www.paris-art.com/martine-face-au-covid-400-dessins/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Martine face au Covid. 400 dessins"
+  },
+  {
+    "source_url": "https://www.paris-art.com/vera-molnar-decouper-deplacer-ajuster-coller/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Découper, déplacer, ajuster, coller"
+  },
+  {
+    "source_url": "https://www.paris-art.com/misleidys-castillo-pedroso-carreau-du-temple-drawing-now-art-fair/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Salon du dessin"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2026/05/2026-5-8.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": ""
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2026/03/blog-post.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "유튜브에서 '이아츠' 검색하면..."
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2024/12/my-first-robot-dreami.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "나의 첫 로봇 드림이 출간!  [My first robot Dreami ]"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2024/01/the-pufferfish-spike-adventures-of.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The pufferfish Spike: -The Adventures of 'Spike' the Pufferfish"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2024/01/whispering-fairy-guri-friendship-of.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Whispering Fairy Guri: The Friendship of Baby Buffalo Moomoo and Dungfly Guri"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/02/my-little-journey-13.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #13"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/02/my-little-journey-12.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #12"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/02/my-little-journey-11.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #11"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/01/my-little-journey-10.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #10"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/01/my-little-journey-09.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #09"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/01/my-little-journey-08.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #08"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/01/my-little-journey-07.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #07"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/01/my-little-journey-06.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #06"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/01/my-little-journey-05.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #05"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2022/01/my-little-journey-04.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #04"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2021/12/my-little-journey-03.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #03"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2021/12/my-little-journey-02.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #02"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2021/12/my-little-journey-01.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "My little journey #01"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2021/12/2021_42.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "2021년 충용미술전 회화부문 장려상 수상작"
+  },
+  {
+    "source_url": "http://artistjs.blogspot.com/2021/12/2021_2.html",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "2021년 충용미술전 공모전 디자인부문 출품작"
+  },
+  {
+    "source_url": "https://illustrationage.com/2020/12/02/steering-the-relation-ship/",
+    "category": "off-topic",
+    "reason": "не по теме блога: «creative industry»",
+    "title": "Steering the Relation Ship"
+  },
+  {
+    "source_url": "https://illustrationage.com/2020/07/13/black-students-matter-an-interview-with-the-creator-of-blackatsva/",
+    "category": "ethnic_hatred",
+    "reason": "межнациональная неприязнь: racist",
+    "title": "| Black Students Matter - An Interview with the Creator of BlackAtSVAILLUSTRATION AGE"
+  },
+  {
+    "source_url": "https://makingamark.blogspot.com/2026/05/Selected-Artists -Portrait-Award-2026-Part-1 .html",
+    "category": "politics",
+    "reason": "политика: election",
+    "title": "MAKING A MARK: Selected Artists (Part 1: A-H) for The Portrait Award 2026 at the National Portrait Gallery"
+  },
+  {
+    "source_url": "https://www.artasiapacific.com/news/valerie-hillings-appointed-inaugural-director-of-guggenheim-abu-dhabi/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Valerie Hillings Appointed Inaugural Director of Guggenheim Abu Dhabi"
+  },
+  {
+    "source_url": "https://www.artasiapacific.com/news/carlos-quijon-jr-joins-cultural-center-of-the-philippines/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Carlos Quijon Jr Joins Cultural Center of the Philippines"
+  },
+  {
+    "source_url": "https://www.artasiapacific.com/shows/to-fall-and-to-mourn-isaac-chong-wais-an-intimate-surrender-at-tai-kwun/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "To Fall, and to Mourn: Isaac Chong Wai’s “An Intimate Surrender” at Tai Kwun"
+  },
+  {
+    "source_url": "https://www.artasiapacific.com/shows/up-close-chitra-ganeshs-journey-to-the-great-below/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Up Close: Chitra Ganesh’s “Journey to the Great Below”"
+  },
+  {
+    "source_url": "https://www.artasiapacific.com/news/weekly-news-roundup-july-31-2026/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Weekly News Roundup: July 31, 2026"
+  },
+  {
+    "source_url": "https://www.artasiapacific.com/news/guggenheim-abu-dhabi-reveals-opening-date/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Guggenheim Abu Dhabi Reveals Opening Date"
+  },
+  {
+    "source_url": "https://www.artasiapacific.com/news/low-kee-hong-to-lead-2028-biennale-of-sydney/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Low Kee Hong to Lead 2028 Biennale of Sydney"
+  },
+  {
+    "source_url": "https://www.artasiapacific.com/news/valentin-noujaim-wins-han-nefkens-foundations-mediterranean-video-art-grant/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Valentin Noujaïm Wins Han Nefkens Foundation’s Mediterranean Video Art Grant"
+  },
+  {
+    "source_url": "https://www.artasiapacific.com/salt-research-handan-borutecene-archive/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Salt Research: Handan Börüteçene Archive"
+  },
+  {
+    "source_url": "https://www.artasiapacific.com/news/shabbir-hussain-mustafa-named-artistic-director-of-2028-aichi-triennale/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Shabbir Hussain Mustafa Named Artistic Director of 2028 Aichi Triennale"
+  },
+  {
+    "source_url": "https://www.artasiapacific.com/people/a-degree-of-separation-interview-with-basak-doga-temur/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "A Degree of Separation: Interview with Başak Doğa Temür"
+  },
+  {
+    "source_url": "https://www.artasiapacific.com/news/eu-pulls-venice-biennale-funding-over-russian-participation/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "EU Pulls Venice Biennale Funding Over Russian Participation"
+  },
+  {
+    "source_url": "https://www.artasiapacific.com/news/dias-jessica-morgan-tapped-as-director-of-tate/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Dia’s Jessica Morgan Tapped as Director of Tate"
+  },
+  {
+    "source_url": "https://www.artasiapacific.com/news/v-as-former-academic-head-cites-racist-behavior-from-museum-staff/",
+    "category": "ethnic_hatred",
+    "reason": "межнациональная неприязнь: racist",
+    "title": "V&A’s Former Academic Head Alleges Racist Behavior from Museum Staff"
+  },
+  {
+    "source_url": "https://www.booooooom.com/2026/08/05/the-calling-of-the-steppes-by-photographer-alina-bobrova/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "“The Calling of The Steppes” by Photographer Alina Bobrova"
+  },
+  {
+    "source_url": "https://www.booooooom.com/2026/07/31/cartilage-by-photographer-luke-rosing/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "“Cartilage” by Photographer Luke Rosing"
+  },
+  {
+    "source_url": "https://www.booooooom.com/2026/07/29/artist-spotlight-alexis-jamet/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Artist Spotlight: Alexis Jamet"
+  },
+  {
+    "source_url": "https://www.booooooom.com/2026/07/27/finding-faith-in-the-fight-by-photographer-joao-daniel-pereira/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "“Finding Faith in the Fight” by Photographer João Daniel Pereira"
+  },
+  {
+    "source_url": "https://www.booooooom.com/2026/08/03/artist-spotlight-emma-steinkraus-2/",
+    "category": "politics",
+    "reason": "политика: election",
+    "title": "Artist Spotlight: Emma Steinkraus - BOOOOOOOM! - CREATE * INSPIRE * COMMUNITY * ART * DESIGN * MUSIC * FILM * PHOTO * PROJECTS"
+  },
+  {
+    "source_url": "https://www.connaissancedesarts.com/artistes/eugene-boudin-les-13-plus-beaux-chefs-doeuvre-du-pere-de-limpressionnisme-11215123/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Eugène Boudin : les 13 plus beaux chefs-d’oeuvre du père de l’impressionnisme"
+  },
+  {
+    "source_url": "https://www.connaissancedesarts.com/musees/en-correze-un-troisieme-vol-du-musee-jacques-chirac-relance-les-inquietudes-sur-la-securite-des-musees-11215170/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "En Corrèze, un troisième vol au musée Jacques Chirac relance les inquiétudes sur la sécurité des musées"
+  },
+  {
+    "source_url": "https://www.connaissancedesarts.com/arts-expositions/art-ancien/au-chateau-de-chantilly-une-exposition-rare-devoile-lhistoire-du-legendaire-diamant-rose-du-grand-conde-11215146/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Au château de Chantilly, une exposition rare dévoile l’histoire du légendaire Diamant Rose du Grand Condé"
+  },
+  {
+    "source_url": "https://www.connaissancedesarts.com/arts-expositions/exposition-cet-automne-le-centre-pompidou-metz-redonne-sa-place-a-une-artiste-femme-oubliee-de-lart-moderne-11214930/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Exposition : cet automne, le Centre Pompidou-Metz redonne sa place à une artiste femme oubliée de l’art moderne"
+  },
+  {
+    "source_url": "https://www.connaissancedesarts.com/metiers_art/artisan-art/en-auvergne-alexandra-boiche-chasseuse-de-pierres-et-lapidaire-revele-la-beaute-des-gemmes-oubliees-11215111/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "En Auvergne, Alexandra Boiche, chasseuse de pierres et lapidaire, révèle la beauté des gemmes oubliées"
+  },
+  {
+    "source_url": "https://www.connaissancedesarts.com/arts-expositions/art-ancien/de-monstre-a-dandy-une-exposition-au-musee-de-cherbourg-revele-la-fascinante-metamorphose-de-satan-dans-lart-du-xixe-siecle-11215015/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "De monstre à dandy, une exposition au musée de Cherbourg révèle la fascinante métamorphose de Satan dans l’art du XIXe siècle"
+  },
+  {
+    "source_url": "https://www.connaissancedesarts.com/metiers_art/lille-dans-les-coulisses-de-la-manufacture-royale-de-wit-au-chevet-des-plus-belles-tapisseries-du-monde-depuis-plus-de-130-ans-11214748/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Lille : dans les coulisses de la Manufacture royale De Wit, au chevet des plus belles tapisseries du monde depuis plus de 130 ans"
+  },
+  {
+    "source_url": "https://hyperallergic.com/anna-boghiguian-savneet-talwar-iris-van-herpen/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Savneet Talwar, Anna Boghiguian, Iris van Herpen"
+  },
+  {
+    "source_url": "https://hyperallergic.com/could-this-new-legislation-protect-historic-sites-from-trumps-wrath/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Could This New Legislation Protect Historic Sites From Trump's Wrath?"
+  },
+  {
+    "source_url": "https://hyperallergic.com/the-lost-pearls-of-new-york-city/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Lost Pearls of New York City"
+  },
+  {
+    "source_url": "https://hyperallergic.com/simone-forti-in-her-own-words/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Simone Forti in Her Own Words"
+  },
+  {
+    "source_url": "https://hyperallergic.com/required-reading-796/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Required Reading"
+  },
+  {
+    "source_url": "https://hyperallergic.com/simone-forti-talks-yoko-ono-dance-and-aging-in-never-before-published-interview/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Simone Forti Talks Yoko Ono, Dance, and Aging in Never-Before-Published Interview"
+  },
+  {
+    "source_url": "https://hyperallergic.com/anna-boghiguian-on-weaving-armenia/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Anna Boghiguian on Weaving Armenia"
+  },
+  {
+    "source_url": "https://hyperallergic.com/hundreds-demand-return-of-saic-professor/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Hundreds Demand Return of SAIC Professor"
+  },
+  {
+    "source_url": "https://hyperallergic.com/16-arrested-for-showing-portraits-of-people-killed-by-ice-in-dc-senate-building/",
+    "category": "politics",
+    "reason": "политика: congress",
+    "title": "16 Arrested for Showing Portraits of People Killed by ICE in DC Senate Building"
+  },
+  {
+    "source_url": "https://linesandcolors.com/2026/08/07/eye-candy-for-today-frederic-william-burtons-star-crossed-lovers/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Eye Candy for Today: Frederic William Burton’s star crossed lovers"
+  },
+  {
+    "source_url": "https://www.printmag.com/branding-identity-design/they-found-the-identity-for-calder-gardens/",
+    "category": "off-topic",
+    "reason": "тренды/маркетинг без практики художника: «branding»",
+    "title": "They Found the Identity for Calder Gardens"
+  },
+  {
+    "source_url": "https://www.printmag.com/design-news/the-historic-alex-theater-restores-its-cinematic-roots-for-the-odyssey/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Historic ALEX Theatre Restores Its Cinematic Roots for ‘The Odyssey’"
+  },
+  {
+    "source_url": "https://www.printmag.com/daily-heller/the-daily-heller-refreshing-a-counter-culture-classic-2/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Daily Heller: Refreshing a Counter-Culture Classic"
+  },
+  {
+    "source_url": "https://www.printmag.com/daily-heller/the-daily-heller-a-fetish-for-disaster/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Daily Heller: A Fetish for Disaster Illustrations"
+  },
+  {
+    "source_url": "https://www.printmag.com/daily-heller/the-daily-heller-thirty-years-of-sign-trawling/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Daily Heller: 30 Years of Sign Trawling"
+  },
+  {
+    "source_url": "https://www.printmag.com/type-tuesday/type-tuesday-rosebriar-brings-storybook-charm-without-feeling-stuck-in-the-past/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Type Tuesday: Rosebriar Brings Storybook Charm Without Feeling Stuck in the Past"
+  },
+  {
+    "source_url": "https://www.printmag.com/what-matters/what-matters-to-jayna-zweiman/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "What Matters to Jayna Zweiman"
+  },
+  {
+    "source_url": "https://www.printmag.com/daily-heller/the-daily-heller-revivifying-a-dead-language-thru-cartoons/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Daily Heller: Revivifying a Dead Language Through Cartoons"
+  },
+  {
+    "source_url": "https://www.printmag.com/daily-heller/the-daily-heller-thonik/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Daily Heller: Thirty Years of Thonik’s Collaborative Tonic"
+  },
+  {
+    "source_url": "https://www.printmag.com/design-news/sofiane-pamart-movie/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Pianist Sofiane Pamart Creates Immersive Visual Worlds for His Albums and Score Books"
+  },
+  {
+    "source_url": "https://www.printmag.com/designer-profiles/simone-posts-candy-filled-world-is-an-exploration-of-impermanence/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Simone Post’s Candy-Filled World is an Exploration of Impermanence"
+  },
+  {
+    "source_url": "https://www.printmag.com/type-tuesday/how-all-caps-lost-its-voice/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "How ALL CAPS Lost Its Voice"
+  },
+  {
+    "source_url": "https://www.printmag.com/fine-art/what-matters-to-debra-mcguire/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "What Matters to Debra McGuire"
+  },
+  {
+    "source_url": "https://www.printmag.com/dr-dori-cut/dr-doris-cut-100-words-no-filler-6/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Dr. Dori’s Cut: 100 Words. No Filler"
+  },
+  {
+    "source_url": "https://www.printmag.com/daily-heller/the-daily-heller-carving-a-magazine-from-stone/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Daily Heller: Carving a Magazine Into Stone"
+  },
+  {
+    "source_url": "https://www.printmag.com/design-events-conferences/the-best-part-of-circles-conference-happens-between-the-talks/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Best Part of Circles Conference Happens Between the Talks"
+  },
+  {
+    "source_url": "https://www.printmag.com/daily-heller/the-daily-heller-worn-menswear-catalog/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Daily Heller: Glaser’s Well-Worn Menswear Catalog"
+  },
+  {
+    "source_url": "https://www.printmag.com/what-matters/what-matters-to-mark-nichols/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "What Matters to Mark Nichols"
+  },
+  {
+    "source_url": "https://www.printmag.com/daily-heller/the-daily-heller-pogos-political-positions/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Daily Heller: Pogo’s Political Position(s)"
+  },
+  {
+    "source_url": "https://www.printmag.com/daily-heller/the-daily-heller-take-a-load-give-a-load-learn-loads/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Daily Heller: Take a Load, Give a Load, Learn a Load"
+  },
+  {
+    "source_url": "https://www.printmag.com/daily-heller/the-daily-heller-posters-for-communal-action/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Daily Heller: Posters That Sold Collective Action"
+  },
+  {
+    "source_url": "https://www.printmag.com/daily-heller/the-daily-heller-gulliver-the-gullible/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Daily Heller: Gulliver Learns About the Gullible"
+  },
+  {
+    "source_url": "https://www.printmag.com/branding-identity-design/coca-cola-unveils-a-new-global-brand-identity/",
+    "category": "off-topic",
+    "reason": "тренды/маркетинг без практики художника: «branding»",
+    "title": "Coca-Cola Unveils a New Global Brand Identity"
+  },
+  {
+    "source_url": "https://www.printmag.com/what-matters/what-matters-to-diego-limberti/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "What Matters to Diego Limberti"
+  },
+  {
+    "source_url": "https://www.printmag.com/branding-identity-design/designing-1776-juan-carlos-pagans-commemorative-stamp-for-americas-250th-anniversary/",
+    "category": "off-topic",
+    "reason": "тренды/маркетинг без практики художника: «branding»",
+    "title": "Designing 1776: Juan Carlos Pagan’s Commemorative Stamp for America’s 250th Anniversary"
+  },
+  {
+    "source_url": "https://www.printmag.com/concept/amc-bring-back-the-magic/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Bringing Back the Magic to AMC"
+  },
+  {
+    "source_url": "https://www.printmag.com/daily-heller/the-daily-heller-building-a-poster-collection-from-the-cabinet-on-up/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Daily Heller: Building a Poster Collection From the Cabinet Up"
+  },
+  {
+    "source_url": "https://www.printmag.com/daily-heller/the-daily-heller-tales-of-the-book/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Daily Heller: Tales of an Experimental Book"
+  },
+  {
+    "source_url": "https://www.printmag.com/design-culture/are-we-designing-ourselves-into-isolation/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Are We Designing Ourselves Into Isolation?"
+  },
+  {
+    "source_url": "https://www.printmag.com/type-tuesday/typographics-2026-who-gets-to-be-legible/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Typographics 2026: Who Gets to Be Legible?"
+  },
+  {
+    "source_url": "https://www.printmag.com/branding-identity-design/what-brands-are-actually-made-of/",
+    "category": "off-topic",
+    "reason": "тренды/маркетинг без практики художника: «branding»",
+    "title": "What Brands Are Actually Made Of"
+  },
+  {
+    "source_url": "https://www.printmag.com/comics-animation-design/connie-he-creates-a-new-animation-language-with-ai/",
+    "category": "off-topic",
+    "reason": "не по теме блога: «creative industry»",
+    "title": "Connie He Creates a New Animation Language with AI - PRINT Magazine"
+  },
+  {
+    "source_url": "https://scene360.com/art/149111/ny-empire-tattoo-expo/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Three-Story NY Empire Tattoo Expo in Manhattan"
+  },
+  {
+    "source_url": "https://scene360.com/classic/148706/jae-tattoos/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Jae’s Traditional Tattoo Revivals: Tigers, Snakes and More"
+  },
+  {
+    "source_url": "https://scene360.com/flowers-and-plants/148062/poke-ahontas-tattoo/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Poke Ahontas Approaches Tattooing with Mindfulness"
+  },
+  {
+    "source_url": "https://scene360.com/flowers-and-plants/148704/frederik-heil-hand-tattoos/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Frederik Heil Specializes in Hand Tattoos, Particularly Palms"
+  },
+  {
+    "source_url": "https://scene360.com/art/148420/greed-tattoos/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Greed’s Mythological Animal Tattoos and Korean Art Influences"
+  },
+  {
+    "source_url": "https://scene360.com/art/148104/shiryu-tattoo/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "ShiRyu’s Tattooing: A Revolution in Style, Color, and Flow"
+  },
+  {
+    "source_url": "https://scene360.com/body-art/145464/goodmorning-tattoos/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Goodmorning’s Bold, Stylized Take on Japanese Tattoos"
+  },
+  {
+    "source_url": "https://www.artnews.com/art-news/news/was-unusual-all-night-italian-heist-a-work-of-revenge-1234794571/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "All-Night Art Heist in Italy Suspected to Be ‘Some Sort of Revenge’"
+  },
+  {
+    "source_url": "https://www.artnews.com/art-news/news/appeals-court-says-trump-lacks-authority-to-build-white-house-ballroom-1234794551/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Appeals Court Says Trump Lacks Authority to Build White House Ballroom"
+  },
+  {
+    "source_url": "https://www.artnews.com/art-news/market/devil-wears-prada-2-costumes-christies-auction-1234794548/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "20 Years After eBay, ‘The Devil Wears Prada’ Costumes Are Back at Auction, This Time at Christie’s"
+  },
+  {
+    "source_url": "https://www.artnews.com/art-news/news/aspen-air-festival-2026-1234794519/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Aspen’s Ambitious AIR Festival Turns the Rocky Mountains into a Stage"
+  },
+  {
+    "source_url": "https://www.artnews.com/art-news/news/robert-rauschenberg-foundation-new-york-headquarters-sale-1234794514/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Rauschenberg Foundation Has Listed its New York HQ For Sale, Making Way for Possible ‘Luxury Rentals or Boutique Condos’"
+  },
+  {
+    "source_url": "https://www.artnews.com/artnews/news/national-gallery-citizens-assembly-criticism-uk-1234794521/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "National Gallery’s £250 K. Citizens’ Assembly Sparks Art World Criticism and Conservative Backslash"
+  },
+  {
+    "source_url": "https://www.artnews.com/art-news/news/nuclear-bunker-italy-museum-1234794544/",
+    "category": "politics",
+    "reason": "политика: parliament",
+    "title": "Sprawling Nuclear Bunker in Italy Will Soon Be a Cold War Museum"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/david-ostrowski-at-kunstverein-heilbronn-79629?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "David Ostrowski at Kunstverein Heilbronn"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/tony-conrad-at-greene-naftali-new-york-84425?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Tony Conrad at Greene Naftali"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/tran-luong-at-bortolami-85826?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Tran Luong at Bortolami"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/marc-camille-chaimowicz-at-arch-athens-76191?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Marc Camille Chaimowicz at ARCH"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/henrik-olesen-at-kunsthalle-zurich-82308?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Henrik Olesen at Kunsthalle Zürich"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/ser-serpas-at-contemporary-art-gallery-vancouver-82790?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Ser Serpas at Contemporary Art Gallery Vancouver"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/valie-export-at-karma-international-zurich-80316?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Valie Export at Karma International"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/ann-zhao-at-empty-gallery-hong-kong-82229?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Ann Zhao at Empty Gallery"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/anastasia-pavlou-at-lc-queisser-tbilisi-76225?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Anastasia Pavlou at LC QUEISSER"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/matt-keegan-at-magenta-plains-new-york-82560?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Matt Keegan at Magenta Plains"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/yann-gerstberger-at-galerie-gisela-capitain-cologne-78831?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Yann Gerstberger at Galerie Gisela Capitain"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/ageless-ageless-unfinished-is-not-the-same-as-abandoned-at-storage-bangkok-81503?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "<i>Ageless, Ageless: Unfinished Is Not the Same as Abandoned</i> at Storage"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/out-of-sight-out-of-reach-85663?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "<i>Out Of Sight, Out Of Reach</i> at Trout Museum of Art, Appleton"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/goran-medak-at-white-columns-new-york-82659?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Goran Medak at White Columns"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/veit-laurent-kurz-at-haus-am-waldsee-berlin-82826?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Veit Laurent Kurz at Haus am Waldsee"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/yuji-agematsu-at-galerie-buchholz-berlin-84836?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Yuji Agematsu at Galerie Buchholz"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/shuang-li-at-kunsthalle-basel-78106?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Shuang Li at Kunsthalle Basel"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/japser-marsalis-at-chisenhale-gallery-london-84143?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Japser Marsalis at Chisenhale Gallery"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/senga-nengudi-at-den-frie-centre-of-contemporary-art-copenhagen-77878?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Senga Nengudi at Den Frie Centre of Contemporary Art"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/emil-michael-klein-at-ilenia-london-83850?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Emil Michael Klein at Ilenia"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/mercedes-llanos-at-galerie-balice-hertling-paris-80117?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Mercedes Llanos at Galerie Balice Hertling"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/asad-raza-at-kunsthal-gent-79028?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Asad Raza at Kunsthal Gent"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/lutz-bacher-at-wiels-brussels-66158?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Lutz Bacher at WIELS"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/rita-ackermann-at-american-art-catalogues-new-york-78929?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Rita Ackermann at American Art Catalogues"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/allan-mccollum-at-galerie-thomas-schulte-berlin-82593?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Allan McCollum at Galerie Thomas Schulte"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/perceptual-territories-cut-split-layered-at-neugerriemschneider-berlin-74870?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "<i>perceptual territories - cut, split, layered</i> at neugerriemschneider"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/amy-granat-katya-kirilloff-at-gene-fred-santa-fe-80777?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Amy Granat & Katya Kirilloff at Gene & Fred"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/dana-munro-at-flat-time-house-london-82955?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Dana Munro at Flat Time House"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/flowers-in-a-box-at-misako-rosen-tokyo-81340?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "<i>Flowers in a box</i> at Misako & Rosen"
+  },
+  {
+    "source_url": "https://www.contemporaryartdaily.com/project/maaike-schoorel-at-mendes-wood-dm-brussels-82163?source=rss",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Maaike Schoorel at Mendes Wood DM"
+  },
+  {
+    "source_url": "https://www.grafik.net/celebrating-a-century-ral-k5-colour-fan-receives-a-centenary-redesign/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Celebrating a Century: RAL K5 Colour Fan Receives a Centenary Redesign"
+  },
+  {
+    "source_url": "https://www.grafik.net/the-clearings-latest-project-with-robes/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "The Clearing's Latest Project With Robes"
+  },
+  {
+    "source_url": "https://www.grafik.net/snask/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "SNASK: Design with Conviction and Character"
+  },
+  {
+    "source_url": "https://www.grafik.net/behind-the-design-of-the-swiss-passport/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Behind the Design of the Swiss Passport"
+  },
+  {
+    "source_url": "https://www.grafik.net/clim-studios-captivating-motion-design-for-amazons-latest-campaign/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Clim Studio's Captivating Motion Design for Amazon's Latest Campaign"
+  },
+  {
+    "source_url": "https://www.grafik.net/gf-smith-unveils-bold-rebrand-by-templo/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "GF Smith Unveils Bold Rebrand by TEMPLO"
+  },
+  {
+    "source_url": "https://www.grafik.net/20-type-foundries-you-should-know-from-the-monotype-studio/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "20 Type Foundries You Should Know from the Monotype Studio"
+  },
+  {
+    "source_url": "https://www.grafik.net/blag-magazine-issue-02/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Blag Magazine Issue 02"
+  },
+  {
+    "source_url": "https://www.grafik.net/sociotype-journal-issue-03-home/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Sociotype Journal Issue 03 –– HOME"
+  },
+  {
+    "source_url": "https://www.grafik.net/yummycolours-launches-vol-3-0-of-concept-of-the-year/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "YummyColours launches vol 3.0 of Concept of the Year"
+  },
+  {
+    "source_url": "https://www.grafik.net/polestar-launches-2024-design-contest-in-collaboration-with-hot-wheels/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Polestar launches 2024 Design Contest in collaboration with Hot Wheels"
+  },
+  {
+    "source_url": "https://www.grafik.net/a-fresh-campaign-for-roger-and-gallet-by-clim-studio/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "A Fresh Campaign for Roger and Gallet by Clim Studio"
+  },
+  {
+    "source_url": "https://www.grafik.net/untitled/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Lettersetal type foundry puts designers first."
+  },
+  {
+    "source_url": "https://www.japantimes.co.jp/news/2026/08/08/world/politics/russia-anti-war-party/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Russia’s only anti-war party eyes support boost at elections"
+  },
+  {
+    "source_url": "https://www.japantimes.co.jp/news/2026/08/08/world/palestinian-christians-west-bank-exodus/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Exodus: West Bank hardships drive out Palestinian Christians"
+  },
+  {
+    "source_url": "https://www.japantimes.co.jp/sports/2026/08/08/baseball/japanese-baseball/former-carp-catcher-peace/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Former Carp catcher wishes for peace 81 years after atomic bomb"
+  },
+  {
+    "source_url": "https://www.japantimes.co.jp/news/2026/08/08/asia-pacific/politics/india-cockroach-protest-fallout/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "India’s ‘cockroach’ protest movement keeps heat on Modi"
+  },
+  {
+    "source_url": "https://www.japantimes.co.jp/news/2026/08/08/japan/social-media-age-ban/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "As countries ban social media for children, Japan mulls a different approach"
+  },
+  {
+    "source_url": "https://www.japantimes.co.jp/news/2026/08/08/japan/typhoon-dolphin-okinawa/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Typhoon Dolphin hits Okinawa, with China shutting ports ahead of landfall"
+  },
+  {
+    "source_url": "https://www.japantimes.co.jp/news/2026/08/08/japan/kumamoto-quake-toll-39/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Kumamoto quake toll rises to 39"
+  },
+  {
+    "source_url": "https://www.japantimes.co.jp/news/2026/08/08/japan/politics/japan-protests-takeshima-south-korea/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Japan protests South Korean maritime survey off disputed Takeshima"
+  },
+  {
+    "source_url": "https://www.japantimes.co.jp/business/2026/08/08/economy/yen-jumps-us-data/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Yen jumps on U.S. data as traders watch for intervention clues"
+  },
+  {
+    "source_url": "https://www.japantimes.co.jp/news/2026/08/08/japan/tokyo-missile-shelter/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Missile shelter to be built near Tokyo Station amid rising security concerns"
+  },
+  {
+    "source_url": "https://www.japantimes.co.jp/news/2026/08/08/world/politics/colombia-de-la-espriella/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "New Colombia president pledges robust fight against crime, fiscal austerity"
+  },
+  {
+    "source_url": "https://www.japantimes.co.jp/news/2026/08/08/world/us-cyberforces-suicides-focus/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "America’s cyberforces grapple with cluster of deaths by suicide"
+  },
+  {
+    "source_url": "https://www.japantimes.co.jp/news/2026/08/08/world/pentagon-funds-dates-golden-dome-missiles/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Pentagon sets funds and dates for secret Golden Dome space program"
+  },
+  {
+    "source_url": "https://www.japantimes.co.jp/business/2026/08/08/us-mineral-defense-investments/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "U.S. to invest $3 billion in minerals projects to boost supply chains"
+  },
+  {
+    "source_url": "https://www.japantimes.co.jp/business/2026/08/08/economy/trump-solar-green-divide/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Trump’s homegrown solar push risks widening green divide"
+  },
+  {
+    "source_url": "https://www.japantimes.co.jp/news/2026/08/08/world/politics/todd-blanche-attorney-general/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Trump nominee Todd Blanche clears major hurdle in bid to become attorney general"
+  },
+  {
+    "source_url": "https://www.japantimes.co.jp/news/2026/08/08/world/politics/trump-birthright-citizenship-analysis/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Trump’s new attack on birthright citizenship faces uphill legal battle"
+  },
+  {
+    "source_url": "https://www.japantimes.co.jp/business/2026/08/08/economy/trump-fire-fed-lisa-cook/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Trump renews effort to fire Fed Gov. Lisa Cook, continuing attacks on central bank"
+  },
+  {
+    "source_url": "https://www.japantimes.co.jp/news/2026/08/08/world/saudi-arabia-turkey-pakistan-defense-pact/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Saudi Arabia, Turkey, Pakistan sign defense pact amid regional war"
+  },
+  {
+    "source_url": "https://www.japantimes.co.jp/news/2026/08/08/world/politics/us-court-trump-ballroom-halt/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "U.S. court orders halt to Trump ballroom construction"
+  },
+  {
+    "source_url": "https://www.japantimes.co.jp/news/2026/08/08/world/politics/us-senate-russia-sanctions/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "U.S. Senate passes Russia sanctions championed by late Lindsey Graham"
+  },
+  {
+    "source_url": "https://www.japantimes.co.jp/life/2026/08/08/travel/hoshinoya-nara-prison-hotel-meiji-period-architecture-travel/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Locked up in luxury at the new Hoshinoya Nara Prison hotel"
+  },
+  {
+    "source_url": "https://www.japantimes.co.jp/life/2026/08/08/lifestyle/horse-racing-retired-therapy-animal-welfare/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "How Japan’s racehorses find second careers away from the track"
+  },
+  {
+    "source_url": "https://www.japantimes.co.jp/culture/2026/08/08/film/till-we-meet-again-on-the-starry-hil/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "‘Till We Meet Again on the Starry Hill’: Time-travel kamikaze romance gets a pointless sequel"
+  },
+  {
+    "source_url": "https://www.japantimes.co.jp/news/2026/08/07/world/politics/heat-europe-overcrowded-prisons/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Heat waves expose overcrowding crisis in Europe’s aging prisons"
+  },
+  {
+    "source_url": "https://www.japantimes.co.jp/business/2026/08/07/gpif-gain-stocks/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Japan’s GPIF posts $152 billion gain with help from stocks"
+  },
+  {
+    "source_url": "https://www.japantimes.co.jp/news/2026/08/07/japan/politics/tamaki-dpp-race/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Tamaki faces challenge in DPP leadership race"
+  },
+  {
+    "source_url": "https://www.japantimes.co.jp/news/2026/08/07/japan/prince-hisahito-hiroshima-flower/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Prince Hisahito offers flowers for Hiroshima A-bomb victims"
+  },
+  {
+    "source_url": "https://www.japantimes.co.jp/commentary/2026/08/07/japan/nagasaki-81-years-on/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "Nagasaki 81 years on: Learn what hibakusha know"
+  },
+  {
+    "source_url": "https://www.japantimes.co.jp/culture/2026/08/07/film/ghost-of-ueno/",
+    "category": "off-topic",
+    "reason": "нет темы иллюстрации, живописи или техники",
+    "title": "‘Ghost of Ueno’: A human drama about the invisible among us"
+  },
+  {
+    "source_url": "https://makingamark.blogspot.com/2026/05/review-royal-society-of-portrait-painters-annual-exhibition-2026.html",
+    "category": "politics",
+    "reason": "политика: election",
+    "title": "MAKING A MARK: Review: Royal Society of Portrait Painters Annual Exhibition 2026"
+  }
+]
