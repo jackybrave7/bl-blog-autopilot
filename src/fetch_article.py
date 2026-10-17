@@ -382,9 +382,12 @@ def slugify(text: str) -> str:
 def fetch_next(weekday: int | None = None) -> dict:
     from src.sync_published import sync_published_from_wp
 
-    sync = sync_published_from_wp()
-    if sync["added"]:
-        log(f"Синхронизация WP: +{sync['added']} URL в published.json")
+    try:
+        sync = sync_published_from_wp()
+        if sync["added"]:
+            log(f"Синхронизация WP: +{sync['added']} URL в published.json")
+    except requests.RequestException as exc:
+        log(f"⚠ Синхронизация WP не удалась ({exc.__class__.__name__}), использую published.json")
 
     errors: list[str] = []
     today_sources = load_active_sources(weekday)
