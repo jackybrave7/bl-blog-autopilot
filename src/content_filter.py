@@ -34,6 +34,16 @@ def _normalize(text: str) -> str:
     return text
 
 
+def _keyword_matches(blob: str, keyword: str) -> bool:
+    kw = keyword.lower().replace("ё", "е")
+    if not kw:
+        return False
+    # ASCII-only keywords: whole-word match to avoid false positives (e.g. election in selection).
+    if re.fullmatch(r"[a-z]+", kw):
+        return re.search(r"\b" + re.escape(kw) + r"\b", blob) is not None
+    return kw in blob
+
+
 def find_blocked_topic(*texts: str) -> tuple[str, str, str] | None:
     """Возвращает (category_id, label, keyword) или None."""
     blob = _normalize(" ".join(t for t in texts if t))
@@ -42,8 +52,7 @@ def find_blocked_topic(*texts: str) -> tuple[str, str, str] | None:
     for category, meta in load_stop_topics().items():
         label = meta.get("label", category)
         for keyword in meta.get("keywords", []):
-            kw = keyword.lower().replace("ё", "е")
-            if kw and kw in blob:
+            if _keyword_matches(blob, keyword):
                 return category, label, keyword
     return None
 
