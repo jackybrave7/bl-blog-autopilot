@@ -172,6 +172,8 @@ preferred_keywords:
   - museum
   - artwork
   - fine art
+  - art installation
+  - installation art
 
 require_preferred: true
 min_score: 1
