@@ -34,6 +34,19 @@ def _normalize(text: str) -> str:
     return text
 
 
+_ASCII_WORD_KEYWORD = re.compile(r"^[a-z0-9][a-z0-9 -]*[a-z0-9]$|^[a-z0-9]$")
+
+
+def _keyword_matches(blob: str, keyword: str) -> bool:
+    kw = keyword.lower().replace("ё", "е")
+    if not kw:
+        return False
+    # ASCII single words: word boundaries (election ≠ selection).
+    if _ASCII_WORD_KEYWORD.fullmatch(kw) and " " not in kw:
+        return re.search(rf"\b{re.escape(kw)}\b", blob) is not None
+    return kw in blob
+
+
 def find_blocked_topic(*texts: str) -> tuple[str, str, str] | None:
     """Возвращает (category_id, label, keyword) или None."""
     blob = _normalize(" ".join(t for t in texts if t))
@@ -42,8 +55,7 @@ def find_blocked_topic(*texts: str) -> tuple[str, str, str] | None:
     for category, meta in load_stop_topics().items():
         label = meta.get("label", category)
         for keyword in meta.get("keywords", []):
-            kw = keyword.lower().replace("ё", "е")
-            if kw and kw in blob:
+            if _keyword_matches(blob, keyword):
                 return category, label, keyword
     return None
 
